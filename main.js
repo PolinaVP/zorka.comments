@@ -44,6 +44,9 @@ $('#influencer').click(function () {
 $('.btn_smile').click(function () {
     document.getElementById('contact_us').scrollIntoView();
 });
+$('.btn_smile').push(function () {
+    document.getElementById('contact_us').scrollIntoView();
+});
 
 window.addEventListener('load', function () {
     if ($('body').innerWidth() > 767) {

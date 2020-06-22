@@ -70,15 +70,17 @@ let setContent = function (videos) {
         let part = $(this).prevAll('iframe').attr('part');
         part++;
         if (part < videos[i].video.length) {
+            $(this).prevAll('img').attr('src', videos[i].preview[part]);
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-            $(this).prevAll('img').attr('src', videos[i].preview[part]);
+
             $(this).parent().nextAll('a').attr('src', videos[i].source[part]);
         } else {
             part = 0;
+            $(this).prevAll('img').attr('src', videos[i].preview[part]);
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-            $(this).prevAll('img').attr('src', videos[i].preview[part]);
+
         }
     })
 

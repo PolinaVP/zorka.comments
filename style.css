@@ -441,6 +441,7 @@
         line-height: 180%;
         outline: none;
         cursor: pointer;
+        z-index: -5;
       }
 
       form .select_ar{

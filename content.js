@@ -1,20 +1,6 @@
 
 let videos;
 
-let setMain = function (marketing) {
-    let url = `${marketing}/videos.json`;
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            videos = data;
-            setContent(videos);
-            setVideos();
-        });
-    console.log(videos);
-}
-setMain("influencer");
-$(window).on('resize', setVideos);
-
 let setContent = function (videos) {
     document.getElementById('main').innerHTML = "";
     for (let i = 0; i < videos.length; i++) {
@@ -87,7 +73,6 @@ let setContent = function (videos) {
     })
 
 };
-
 let setVideos = function () {
     let video = document.querySelectorAll('.video');
     let container = document.querySelectorAll('.main .container');
@@ -102,5 +87,23 @@ let setVideos = function () {
 
     }
 };
+
+let setMain = function (marketing) {
+    let url = `${marketing}/videos.json`;
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            videos = data;
+            setContent(videos);
+            setVideos();
+        });
+    console.log(videos);
+}
+setMain("influencer");
+$(window).on('resize', setVideos);
+
+
+
+
 
 

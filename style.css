@@ -731,27 +731,7 @@
         transition: transform .3s,-webkit-transform .3s;
       }
 
-      .btn_smile:hover .smile {
-        display: none;
-      }
-
-      .btn_smile:hover button {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-      }
-
-      .btn_smile:hover img:not(.smile) {
-        -webkit-transition: -webkit-transform 1s .15s;
-        transition: -webkit-transform 1s .15s;
-        -o-transition: transform 1s .15s;
-        transition: transform 1s .15s;
-        transition: transform 1s .15s,-webkit-transform 1s .15s;
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
-      }
+     
      
 
       form.open~.btn_smile button {
@@ -775,4 +755,28 @@
 
       footer {
         padding: 90px 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        .btn_smile:hover .smile {
+          display: none;
+        }
+  
+        .btn_smile:hover button {
+          opacity: 1;
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+  
+        .btn_smile:hover img:not(.smile) {
+          -webkit-transition: -webkit-transform 1s .15s;
+          transition: -webkit-transform 1s .15s;
+          -o-transition: transform 1s .15s;
+          transition: transform 1s .15s;
+          transition: transform 1s .15s,-webkit-transform 1s .15s;
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
       }

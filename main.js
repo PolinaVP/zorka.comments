@@ -117,7 +117,7 @@ let setVideos = function () {
     }
 };
 
-window.addEventListener('load', setVideos);
+$(document).ready(setVideos);
 $(window).on('resize', setVideos);
 
 let setPlaceholder = function () {

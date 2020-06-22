@@ -226,6 +226,11 @@ form select{
     vertical-align: top; 
 }
 
+form .error_val {
+    font-size: 3.7vw;
+    margin: auto 0;
+  }
+
 
 
 .btn_smile button {

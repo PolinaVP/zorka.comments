@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Influencer Marketing:<br> why is it so trendy?",
+        "description": [
+            "What tasks does influencer marketing solve?<br>What is the average price of influencer services?<br>Why do people trust a blogger more than a brand?<br>Why influencer marketing is one of the most effective<br>digital tools?"
+        ],
+        "preview": [
+            "influencer/img/video1_1.png",
+            "influencer/img/video1_2.png"
+        ],
+        "video": [
+            "https://www.youtube.com/embed/KUEml-4WeX4",
+            "https://www.youtube.com/embed/2en5VG7bT5c"
+        ],
+        "source": [
+            "https://youtu.be/KUEml-4WeX4",
+            "https://youtu.be/2en5VG7bT5c"
+        ]
+    },
+    {
+        "title": "How not to fail dealing with a<br> blogger? Revealing legal issues.",
+        "description": [
+            "What to do if a blogger hasn't fulfilled his contract?<br>How do I start an advertising campaign with a blogger?<br>Can I post content created by an influencer on my social media?<br>What are the payment methods for a blogger?"
+        ],
+        "preview": [
+            "influencer/img/video2_1.png",
+            "influencer/img/video2_2.png"
+        ],
+        "video": [
+            "https://www.youtube.com/embed/tkHSw0qB8XQ",
+            "https://www.youtube.com/embed/jnU-Fd6t0DA"
+        ],
+        "source": [
+            "https://youtu.be/tkHSw0qB8XQ",
+            "https://youtu.be/jnU-Fd6t0DA"
+        ]
+    },
+    {
+        "title": "Get the lowdown while<br> working with influencers?",
+        "description": [
+            "Is there a difference between an influencer and a blogger?<br>Who's a brand ambassador?<br>What is the main motivation for an influencer?<br>What are the pros and cons of a free creative production<br>and clear brief?"
+        ],
+        "preview": [
+            "influencer/img/video3_1.png",
+            "influencer/img/video3_2.png"
+        ],
+        "video": [
+            "https://www.youtube.com/embed/-pdd521Fkec",
+            "https://www.youtube.com/embed/mQykh40GHUU"
+        ],
+        "source": [
+            "https://youtu.be/-pdd521Fkec",
+            "https://youtu.be/mQykh40GHUU"
+        ]
+    },
+    {
+        "title": "Exclusive!<br> Blogger’s in the spotlight:<br> Interview with a top<br> russian-speaking tech blogger.",
+        "description": [
+            "12 Questions to Andro News you want to know."
+        ],
+        "preview": [
+            "influencer/img/video4_1.png"
+        ],
+        "video": [
+            "https://www.youtube.com/embed/Wm0nRPWdhGY"
+        ],
+        "source": [
+            "https://youtu.be/Wm0nRPWdhGY"
+        ]
+    },
+    {
+        "title": "Exclusive!<br> Blogger’s in the spotlight:<br> Interview with OliDavis<br> (Wrestler Talk).",
+        "description": [
+            "Oli Davis – shares his experience of working<br>with the agencies and clients directly."
+        ],
+        "preview": [
+            "influencer/img/video5_1.png"
+        ],
+        "video": [
+            "https://www.youtube.com/embed/VtW04jfbfmc"
+        ],
+        "source": [
+            "https://youtu.be/VtW04jfbfmc"
+        ]
+    }
+]

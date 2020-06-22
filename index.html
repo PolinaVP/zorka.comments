@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <title>Zorka.Comments</title>
+    <meta property="og:image" content="img/og-image.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="https://zorka.mobi/" class="img-container">
+            <div class="img-logo"></div>
+            <div class="img-zn"></div>
+        </a>
+
+    </header>
+
+    <div class="header">
+        <video muted autoplay preload="auto">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <h1>Zorka.<wbr>Comments</h1>
+        <p> Insights from the field. <a href="#main">Find the answers</a> to all of your questions here in a few
+            minutes
+            with
+            Zorka.Mobi experts.</p>
+        <div class="buttons">
+            <a class="active" id="influencer">#Influencer marketing</a>
+            <a id="performance">#Performance marketing</a>
+        </div>
+    </div>
+
+    <section class="main influencer" id="main">
+
+    </section>
+
+    <div class="featured_on">
+        <h2>Featured on</h2>
+        <div>
+            <div class="forbes"></div>
+            <div class="container">
+                <h3>Zorka.Mobi and Azur<br>Games — Case Study:<br>experimental mobile<br>shooter
+                    pre-release<br>campaign
+            </div>
+            </h3>
+        </div>
+    </div>
+
+
+
+    <form id="contact_us">
+        <h2>Contact us</h2>
+
+        <label>
+            <input type="text" id="task_name" name="name" placeholder_web="What is your name?"
+                placeholder_mob="What is your name?" autocomplete="off" value="" required>
+            <div class="error_val">This field cannot be empty.</div>
+        </label>
+
+        <label>
+            <input type="text" id="task_company" name="company" placeholder_web="Please, fill your company name"
+                placeholder_mob="Your company name" value="" required>
+            <div class="error_val">This field cannot be empty.</div>
+        </label>
+
+        <label>
+            <input type="text" id="task_email" name="email" placeholder_web="Email. I promise not to spam ;)"
+                placeholder_mob="Email" value="" pattern=".+@.+\..+" required>
+            <div class="error_val">Hmmm... looks like @ missing</div>
+        </label>
+
+        <label>
+            <div class="select_ar">
+                <select name="source" id="task_source" required>
+                    <option value="" disabled selected hidden>How did you discover us?</option>
+                    <option value="Recommendations">Recommendations</option>
+                    <option value="Media Sources">Media Sources</option>
+                    <option value="Web Search">Web Search</option>
+                    <option value="Social Networks">Social Networks</option>
+                    <option value="Conference">Conference</option>
+                </select>
+            </div>
+            <div class="error_val">Choose one option.</div>
+
+
+        </label>
+
+        <label>
+            <div class="select_ar">
+                <select name="purpose" id="task_purpose" required>
+                    <option value="" disabled selected hidden>Purpose of your enquiry?</option>
+                    <option value="Considering advertising and marketing services">Considering advertising and<Wbr> marketing
+                    services</option>
+                    <option value="Talent management">Talent management</option>
+                    <option value="Vendor">Vendor</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="error_val">Choose one option.</div>
+        </label>
+
+        <label>
+            <textarea id="task_msg" name="task_msg"
+                placeholder_web="Tell me what you want. What you really&#8209really want!"
+                placeholder_mob="And... Your Message" required></textarea>
+            <div class="error_val">This field cannot be empty.</div>
+        </label>
+
+    </form>
+
+
+    <div class="btn_smile">
+        <button class="send_msg">Send message</button>
+        <img class="smile" src="img/smile.png" alt="smile">
+        <img src="img/smile-active.svg" alt="smile">
+    </div>
+
+    <footer>
+        <p>©️ 2020 ZORKA.COMMENTS. All Rights Reserved</p>
+    </footer>
+
+
+
+    <script src="content.js"></script>
+    <script src="main.js"></script>
+    <script src="autosize-input/index.js"></script>
+
+</body>

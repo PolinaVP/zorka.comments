@@ -1,0 +1,77 @@
+{
+  "_from": "autosize-input",
+  "_id": "autosize-input@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Aido2jsVEn9sJyl/cf+ntRHL0EDHRkvkhOqGfqHs4cw5dwtoGNJMYmflzwOqPh0xwJHADRnxDT5eFTzabnRyhA==",
+  "_location": "/autosize-input",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "autosize-input",
+    "name": "autosize-input",
+    "escapedName": "autosize-input",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/autosize-input/-/autosize-input-1.0.2.tgz",
+  "_shasum": "16312e191391c12d66d94ddf9d8e4be07fc48a00",
+  "_spec": "autosize-input",
+  "_where": "C:\\Users\\user\\Desktop\\zorka.comments",
+  "author": {
+    "name": "Lim Yuan Qing"
+  },
+  "bugs": {
+    "url": "https://github.com/yuanqing/autosize-input/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Effortless, dynamic-width text boxes in vanilla JavaScript.",
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "concurrently": "^3.5.1",
+    "ecstatic": "^3.2.0",
+    "glob": "^7.1.2",
+    "gzip-size-cli": "^2.1.0",
+    "nightmare": "^3.0.0",
+    "opn-cli": "^3.1.0",
+    "prettier-standard": "^8.0.0",
+    "standard": "^11.0.1",
+    "tape": "^4.8.0",
+    "uglify-js": "^3.3.16",
+    "watchify": "^3.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/yuanqing/autosize-input#readme",
+  "keywords": [
+    "autosize",
+    "dom",
+    "form",
+    "html",
+    "input",
+    "size",
+    "width"
+  ],
+  "license": "MIT",
+  "name": "autosize-input",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuanqing/autosize-input.git"
+  },
+  "scripts": {
+    "clean": "rm -rf *.log",
+    "fix": "prettier-standard index.js 'test/**/*.js'",
+    "lint": "standard index.js 'test/**/*.js'",
+    "start": "concurrently \"watchify index.js --standalone autosizeInput --outfile bundle.js\" \"ecstatic --port 8080\" \"opn 'http://0.0.0.0:8080/example/'\"",
+    "test": "browserify index.js --standalone autosizeInput --outfile bundle.js && tape test",
+    "weight": "uglifyjs index.js --compress --mangle --toplevel | gzip-size"
+  },
+  "version": "1.0.2"
+}

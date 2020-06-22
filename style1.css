@@ -205,31 +205,6 @@ form {
     padding: 0 30px;
   }
 
-  form label {
-      flex-direction: column;
-  }
-
-form input,
-form .select_ar,
-form textarea,
-form input::placeholder,
-form textarea::placeholder  {
-    font-size: 24px;
-    line-height: 45px;
-    border-bottom:  4px solid rgba(255, 255, 255, 0.2);
-    vertical-align: top;
-}
-
-form select{
-    font-size: 24px;
-    line-height: 45px;
-    vertical-align: top; 
-}
-
-form .error_val {
-    font-size: 3.7vw;
-    margin: auto 0;
-  }
 
 
 
@@ -305,4 +280,32 @@ footer {
         padding: 0 70px;
       } 
     }
+
+@media screen and (max-width: 640px){
+    form label {
+        flex-direction: column;
+    }
+  
+  form input,
+  form .select_ar,
+  form textarea,
+  form input::placeholder,
+  form textarea::placeholder  {
+      font-size: 24px;
+      line-height: 45px;
+      border-bottom:  4px solid rgba(255, 255, 255, 0.2);
+      vertical-align: top;
+  }
+  
+  form select{
+      font-size: 24px;
+      line-height: 45px;
+      vertical-align: top; 
+  }
+  
+  form .error_val {
+      font-size: 3.7vw;
+      margin: auto 0;
+    }
+}
 

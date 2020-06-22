@@ -101,25 +101,6 @@ $(window).on('resize', resizeIrame);
 
 
 
-
-let setVideos = function () {
-    let video = document.querySelectorAll('.video');
-    let container = document.querySelectorAll('.main .container');
-    if ($('body').innerWidth() <= 767) {
-        for (let i = 0; i < container.length; i++) {
-            container[i].querySelector('p').before(video[i]);
-        }
-    } else {
-        for (let i = 0; i < container.length; i++) {
-            container[i].before(video[i]);
-        }
-
-    }
-};
-
-$(document).ready(setVideos);
-$(window).on('resize', setVideos);
-
 let setPlaceholder = function () {
 
     if ($('body').width() > 767) {

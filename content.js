@@ -8,10 +8,12 @@ let setMain = function (marketing) {
         .then(data => {
             videos = data;
             setContent(videos);
+            setVideos();
         });
     console.log(videos);
 }
 setMain("influencer");
+$(window).on('resize', setVideos);
 
 let setContent = function (videos) {
     document.getElementById('main').innerHTML = "";
@@ -84,6 +86,21 @@ let setContent = function (videos) {
         }
     })
 
+};
+
+let setVideos = function () {
+    let video = document.querySelectorAll('.video');
+    let container = document.querySelectorAll('.main .container');
+    if ($('body').innerWidth() <= 767) {
+        for (let i = 0; i < container.length; i++) {
+            container[i].querySelector('p').before(video[i]);
+        }
+    } else {
+        for (let i = 0; i < container.length; i++) {
+            container[i].before(video[i]);
+        }
+
+    }
 };
 
 

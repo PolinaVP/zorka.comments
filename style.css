@@ -661,6 +661,9 @@
         flex-direction: row;
         justify-content: start;
         position: relative;
+        border-radius: 0px;
+        padding: 0;
+        margin: 0;
       }
 
 

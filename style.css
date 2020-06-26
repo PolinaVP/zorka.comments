@@ -451,7 +451,7 @@
 
       form select,
       form .select_ar span {
-        display: block;
+        display: inline-block;
         color: #ffffff;
         max-width: 100%;
         background-color: inherit;

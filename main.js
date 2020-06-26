@@ -130,7 +130,7 @@ $('.select_ar').each(function () {
 });
 
 $('span' , '.select_ar').click(function (e) {
-    $(this).parent('select_ar').toggleClass('open');
+    $(this).parent('.select_ar').toggleClass('open');
 })
 
 

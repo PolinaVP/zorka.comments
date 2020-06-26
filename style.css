@@ -521,6 +521,7 @@
         height: 2vw;
         background-position: center;
         background-size: contain;
+        margin-left: 1.4vw;
         transition: all .5s;
       }
 

@@ -132,8 +132,8 @@ $(window).on('load', function () {
   autosizeInput(document.querySelector('#task_company'));
   autosizeInput(document.querySelector('#task_email'));
   autosizeInput(document.querySelector('#task_msg'));
-  autosizeInput(document.querySelector('#task_source'));
-  autosizeInput(document.querySelector('#task_purpose'));
+  // autosizeInput(document.querySelector('#task_source'));
+  // autosizeInput(document.querySelector('#task_purpose'));
 
 });
 
@@ -142,8 +142,8 @@ $(window).on('resize', function () {
   autosizeInput(document.querySelector('#task_company'));
   autosizeInput(document.querySelector('#task_email'));
   autosizeInput(document.querySelector('#task_msg'));
-  autosizeInput(document.querySelector('#task_source'));
-  autosizeInput(document.querySelector('#task_purpose'));
+  // autosizeInput(document.querySelector('#task_source'));
+  // autosizeInput(document.querySelector('#task_purpose'));
 
 });
 

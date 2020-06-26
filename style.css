@@ -430,7 +430,8 @@
 
 
 
-      form select {
+      form select,
+      form .select_ar span {
         color: #ffffff;
         max-width: 100%;
         background-color: inherit;
@@ -442,7 +443,6 @@
         line-height: 180%;
         outline: none;
         cursor: pointer;
-        z-index: -5;
       }
 
       form .select_ar{
@@ -463,6 +463,7 @@
       }
 
       form select {
+        display: none;
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;

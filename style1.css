@@ -206,7 +206,7 @@ form {
   }
 
   form input,
-  form .select_ar,
+  form .select_ar span,
   form textarea {
       border-bottom:  4px solid rgba(255, 255, 255, 0.2);
   }

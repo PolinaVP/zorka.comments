@@ -121,6 +121,8 @@ let setPlaceholder = function () {
 
 $('.select_ar').each(function () {
     let list = $('<ul />');
+    let label = $('<span />').text($(this).find('option:selected').text());
+    label.insertAfter($(this).find('select'));
     $(this).find('option').not(':disabled').each(function () {
         list.append($('<li />').text($(this).text()));
     });

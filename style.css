@@ -467,6 +467,8 @@
 
       form .select_ar{
         position: relative;
+        margin: 0;
+        padding: 0;
       }
 
 

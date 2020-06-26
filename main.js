@@ -129,8 +129,8 @@ $('.select_ar').each(function () {
     list.insertAfter($(this).find('select'));
 });
 
-$('.select_ar').on('click', function() {
-    $(this).toggleClass('open');
+$('span','.select_ar').on('click', function() {
+    $(this).parent('.select_ar').toggleClass('open');
 });
 
 // $(document).on('click', function(e){

@@ -13,7 +13,8 @@ let setContent = function (videos) {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen ></iframe>
                 <div class="play"></div>    
-                <div class="next_video">&#10095</div>    
+                <div class="next_video">&#10095</div> 
+                <div class="dots"></div>   
             </div>
             <div class="container">
                 <div>
@@ -23,12 +24,25 @@ let setContent = function (videos) {
                 <p>${videos[i].description[0]}</p>
                 <a href=${videos[i].source[0]} target=" _blank" >Check it out</a>
     `;
+
+
+
+
         if (videos[i].video.length < 2) {
             div.querySelector('.next_video').style.display = 'none';
         }
 
         document.getElementById('main').append(div);
-    }
+
+        for (let n = 0; n < videos[i].video.length; n++){
+            let dott = document.createElement('div');
+
+            $('.dots').append(dot);
+        }
+
+    
+    
+    };
 
     $('img', '.video').click(function (e) {
 
@@ -73,6 +87,8 @@ let setContent = function (videos) {
     })
 
 };
+
+
 let setVideos = function () {
     let video = document.querySelectorAll('.video');
     let container = document.querySelectorAll('.main .container');

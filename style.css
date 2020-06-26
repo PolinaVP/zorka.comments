@@ -242,6 +242,22 @@
         flex-direction: column;
       }
 
+      .main .video .dots div {
+        display: inline-block;
+        margin: 0 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #4D4C4C;
+      }
+      .main .video .dots{
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 30px);
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+      }
+
       .main .video .play {
         position: absolute;
         cursor: pointer;

@@ -554,6 +554,10 @@
         display: block;
       }
 
+      form .select_ar.open span{
+        border: none;
+      }
+
       .select_ar.open span:after {
         transform: rotate(180deg);
       }

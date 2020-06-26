@@ -495,7 +495,7 @@
 
 
       form .select_ar:after {
-        content: "";
+        content: " ";
         background: url(img/→.png) no-repeat;
         width: 20px;
         height: 2vw;

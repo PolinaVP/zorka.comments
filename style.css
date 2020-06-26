@@ -250,12 +250,15 @@
         border-radius: 50%;
         background-color: #4D4C4C;
       }
+
       .main .video .dots{
         position: absolute;
         left: 50%;
-        top: calc(100% + 30px);
+        top: calc(100% + 10px);
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
       }
 
       .main .video .play {

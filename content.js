@@ -38,6 +38,7 @@ let setContent = function (videos) {
             let dot = document.createElement('div');
 
             $('.dots')[i].append(dot);
+            
         }
 
     

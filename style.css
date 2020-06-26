@@ -452,10 +452,10 @@
       form select,
       form .select_ar span {
         color: #ffffff;
-        border-bottom:  6px solid rgba(255, 255, 255, 0.2);
         max-width: 100%;
         background-color: inherit;
         border: none;
+        border-bottom:  6px solid rgba(255, 255, 255, 0.2);
         font-family: "Libre Baskerville";
         font-style: normal;
         font-weight: normal;

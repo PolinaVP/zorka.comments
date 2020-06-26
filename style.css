@@ -517,10 +517,10 @@
         content: " ";
         display: inline-block;
         background: url(img/→.png) no-repeat;
-        width: 20px;
+        width: 2vw;
         height: 2vw;
         background-position: center;
-        background-size: 100%;
+        background-size: contain;
         transition: all .5s;
       }
 

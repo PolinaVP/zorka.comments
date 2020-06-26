@@ -496,6 +496,9 @@
 
       form .select_ar:after {
         background: url(img/→.png) no-repeat;
+        width: 2vw;
+        height: 2vw;
+        background-position: center;
         font-size: 2.8vw;
         line-height: 180%;
         color: #ffffff;

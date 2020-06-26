@@ -513,7 +513,7 @@
 
 
 
-      form .select_ar:after {
+      form .select_ar span:after {
         content: " ";
         display: inline-block;
         background: url(img/→.png) no-repeat;
@@ -551,7 +551,7 @@
         display: block;
       }
 
-      .select_ar.open:after {
+      .select_ar.open span:after {
         transform: rotate(180deg);
       }
 

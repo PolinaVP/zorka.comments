@@ -35,7 +35,7 @@ let setContent = function (videos) {
         document.getElementById('main').append(div);
 
         for (let n = 0; n < videos[i].video.length; n++){
-            let dott = document.createElement('div');
+            let dot = document.createElement('div');
 
             $('.dots').append(dot);
         }

@@ -413,7 +413,7 @@
       form input,
       form textarea {
         color: #ffffff;
-        margin: 20px 0 10px 0;
+        
         max-width: 100%;
         display: block;
         background-color: inherit;
@@ -430,6 +430,10 @@
         cursor: pointer;
         
         
+      }
+
+      form label{
+        margin: 20px 0 10px 0;
       }
 
 

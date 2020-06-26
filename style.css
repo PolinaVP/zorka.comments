@@ -464,7 +464,7 @@
         line-height: 180%;
         outline: none;
         cursor: pointer;
-        transition: border-width .2s;
+        transition: border-color .2s;
       }
 
       form .select_ar{
@@ -556,7 +556,7 @@
       }
 
       form .select_ar.open span{
-        border-width: 0;
+        border-color: rgba(255, 255, 255, 0);
       }
 
       .select_ar.open span:after {

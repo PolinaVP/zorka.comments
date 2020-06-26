@@ -133,12 +133,12 @@ $('.select_ar').click(function (e) {
     $(this).toggleClass('open');
 });
 
-$(document).on('click', function(e){
-    let select_ar = $('.select_ar');
-    if(select_ar !== e.target){
-        select_ar.removeClass('open');
-    }
-});
+// $(document).on('click', function(e){
+//     let select_ar = $('.select_ar');
+//     if(select_ar !== e.target){
+//         select_ar.removeClass('open');
+//     }
+// });
 
 
 

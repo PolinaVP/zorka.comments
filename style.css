@@ -522,6 +522,7 @@
         background-position: center;
         background-size: contain;
         margin-left: 1.4vw;
+        vertical-align: middle;
         transition: all .5s;
       }
 

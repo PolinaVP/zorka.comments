@@ -30,6 +30,7 @@ let setContent = function (videos) {
 
         if (videos[i].video.length < 2) {
             div.querySelector('.next_video').style.display = 'none';
+            div.querySelector('.dots').style.display = 'none';
         }
 
         document.getElementById('main').append(div);
@@ -38,7 +39,7 @@ let setContent = function (videos) {
             let dot = document.createElement('div');
 
             $('.dots')[i].append(dot);
-            
+
         }
 
     

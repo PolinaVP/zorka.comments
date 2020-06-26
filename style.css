@@ -495,10 +495,7 @@
 
 
       form .select_ar:after {
-        content: "\2193";
-        font-family: "Libre Baskerville";
-        font-style: normal;
-        font-weight: normal;
+        background: url(img/→.png) no-repeat;
         font-size: 2.8vw;
         line-height: 180%;
         color: #ffffff;

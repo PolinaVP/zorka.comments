@@ -129,7 +129,7 @@ $('.select_ar').each(function () {
     list.insertAfter($(this).find('select'));
 });
 
-$('.select_ar').click(function (e) {
+$('.select_ar').click(function() {
     $(this).toggleClass('open');
 });
 

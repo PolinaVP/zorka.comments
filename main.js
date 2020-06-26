@@ -131,7 +131,14 @@ $('.select_ar').each(function () {
 
 $('span' , '.select_ar').click(function (e) {
     $(this).parent('.select_ar').toggleClass('open');
-})
+});
+
+$(document).on('click', function(e){
+    let select_ar = $('.select_ar');
+    if(select_ar !== e.target){
+        select_ar.removeClass('open');
+    }
+});
 
 
 

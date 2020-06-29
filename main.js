@@ -136,7 +136,7 @@ $('span','.select_ar').on('click', function() {
 $(document).on('click', function(e){
     let span = $('span', '.select_ar');
     if(span !== e.target){
-        span.parent(select_ar).removeClass('open');
+        span.parent('.select_ar').removeClass('open');
     }
 });
 

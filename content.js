@@ -69,23 +69,36 @@ let setContent = function (videos) {
     })
 
 
+    // $('.next_video', '.video').click(function (e) {
+    //     let i = $('.next_video', '.video').index(e.target);
+    //     let part = $(this).prevAll('iframe').attr('part');
+    //     part++;
+    //     if (part < videos[i].video.length) {
+    //         $(this).prevAll('img').attr('src', videos[i].preview[part]);
+    //         $(this).prevAll('iframe').attr('part', part);
+    //         $(this).prevAll('iframe').attr('src', videos[i].video[part]);
+    //         $(this).parent().nextAll('a').attr('src', videos[i].source[part]);
+
+    //     } else {
+    //         part = 0;
+    //         $(this).prevAll('img').attr('src', videos[i].preview[part]);
+    //         $(this).prevAll('iframe').attr('part', part);
+    //         $(this).prevAll('iframe').attr('src', videos[i].video[part]);
+
+    //     }
+    // })
+
     $('.next_video', '.video').click(function (e) {
         let i = $('.next_video', '.video').index(e.target);
         let part = $(this).prevAll('iframe').attr('part');
         part++;
-        if (part < videos[i].video.length) {
-            $(this).prevAll('img').attr('src', videos[i].preview[part]);
-            $(this).prevAll('iframe').attr('part', part);
-            $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-
-            $(this).parent().nextAll('a').attr('src', videos[i].source[part]);
-        } else {
+        if (part >= videos[i].video.length) {
             part = 0;
+        };
             $(this).prevAll('img').attr('src', videos[i].preview[part]);
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-
-        }
+            $(this).parent().nextAll('a').attr('src', videos[i].source[part]);
     })
 
 };

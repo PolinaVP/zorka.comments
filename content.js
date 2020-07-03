@@ -98,7 +98,8 @@ let setContent = function (videos) {
             $(this).prevAll('img').attr('src', videos[i].preview[part]);
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-            $(this).parent().nextAll('a').attr('src', videos[i].source[part]);
+            $(this).parent().parent().find('a').attr('src', videos[i].source[part]);
+
     })
 
 };

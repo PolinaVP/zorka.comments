@@ -82,8 +82,8 @@ let setContent = function (videos) {
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
             $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
-            $(this).nextAll('.dot').removeClass('active');
-            $(this).nextAll('.dots').find('div')[part].addClass('active');
+            $(this).parent().find('.dots div').removeClass('active');
+            $(this).parent().find('.dots div')[part].addClass('active');
          if (videos[i].description[part]){
             $(this).parent().parent().find('p').html(videos[i].description[part]);
          }

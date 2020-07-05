@@ -78,7 +78,7 @@ let setContent = function (videos) {
         if (part >= videos[i].video.length) {
             part = 0;
         };
-            $(this).prevAll('img').attr('src', videos[i].preview[part]);
+
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
             $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
@@ -87,6 +87,7 @@ let setContent = function (videos) {
          if (videos[i].description[part]){
             $(this).parent().parent().find('p').html(videos[i].description[part]);
          }
+         $(this).prevAll('img').attr('src', videos[i].preview[part]);
     })
 
 };

@@ -261,6 +261,10 @@
         padding: 0;
       }
 
+      .main > div:nth-child(even) .dots div{
+        background-color: #CFCFCF;
+      }
+
 
       .main .video .dots div.active{
         background-color: #ffffff;

@@ -261,6 +261,16 @@
         padding: 0;
       }
 
+
+      .dots div.active{
+        background-color: #ffffff;
+      }
+
+    
+      .main > div:nth-child(even) .dots div.active{
+        background-color: #4C4C4C;
+      }
+
       .main .video .play {
         position: absolute;
         cursor: pointer;

@@ -69,24 +69,6 @@ let setContent = function (videos) {
     })
 
 
-    // $('.next_video', '.video').click(function (e) {
-    //     let i = $('.next_video', '.video').index(e.target);
-    //     let part = $(this).prevAll('iframe').attr('part');
-    //     part++;
-    //     if (part < videos[i].video.length) {
-    //         $(this).prevAll('img').attr('src', videos[i].preview[part]);
-    //         $(this).prevAll('iframe').attr('part', part);
-    //         $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-    //         $(this).parent().nextAll('a').attr('src', videos[i].source[part]);
-
-    //     } else {
-    //         part = 0;
-    //         $(this).prevAll('img').attr('src', videos[i].preview[part]);
-    //         $(this).prevAll('iframe').attr('part', part);
-    //         $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-
-    //     }
-    // })
 
     $('.next_video', '.video').click(function (e) {
         let i = $('.next_video', '.video').index(e.target);
@@ -99,6 +81,8 @@ let setContent = function (videos) {
             $(this).prevAll('iframe').attr('part', part);
             $(this).prevAll('iframe').attr('src', videos[i].video[part]);
             $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
+            $(this).nextAll('.dot').removeClass('active');
+            $(this).nextAll('.dots div:nth-child(part - 1)').index(part).addClass('active');
          if (videos[i].description[part]){
             $(this).parent().parent().find('p').html(videos[i].description[part]);
          }

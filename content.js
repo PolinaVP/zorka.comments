@@ -42,6 +42,7 @@ let setContent = function (videos) {
 
         }
 
+        $('.dots div:first-child').addClass('active');
     
     
     };

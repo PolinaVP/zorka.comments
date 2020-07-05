@@ -437,7 +437,7 @@
         font-family: "Libre Baskerville";
         font-style: normal;
         font-weight: normal;
-        font-size: 2.8vw;
+        font-size: 2.7vw;
         line-height: 180%;
         outline: none;
         padding: 0;
@@ -455,7 +455,7 @@
         font-family: "Libre Baskerville";
         font-style: normal;
         font-weight: normal;
-        font-size: 2.8vw;
+        font-size: 2.7vw;
         line-height: 180%;
         color: #ffffff;
       }
@@ -474,7 +474,7 @@
         font-family: "Libre Baskerville";
         font-style: normal;
         font-weight: normal;
-        font-size: 2.8vw;
+        font-size: 2.7vw;
         line-height: 180%;
         outline: none;
         cursor: pointer;
@@ -535,7 +535,7 @@
         display: inline-block;
         background: url(img/→.png) no-repeat;
         width: 2vw;
-        height: 2.8vw;
+        height: 2.7vw;
         background-position: center;
         background-size: contain;
         margin-left: 1.4vw;

@@ -72,15 +72,9 @@ $(window).scroll(function () {
     let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     if (bottom_of_screen > top_of_form) {
         $('#contact_us').addClass('open');
-        $('.btn_smile').click(function(){
-            alert(123);
-        });
-        return;
+
     } else {
         $('#contact_us').removeClass('open');
-        $('.btn_smile').click(function () {
-            document.getElementById('contact_us').scrollIntoView();
-        });
         return;
     }
 });
@@ -89,9 +83,13 @@ $(window).scroll(function () {
 //     alert(123);
 // })
 
-// $('.btn_smile').click(function () {
-//     document.getElementById('contact_us').scrollIntoView();
-// });
+$('.btn_smile').click(function () {
+    if ($('form').hasClass('open')){
+        alert(123);
+    }else {
+    document.getElementById('contact_us').scrollIntoView();
+    }
+});
 // $('.btn_smile').push(function () {
 //     document.getElementById('contact_us').scrollIntoView();
 // });

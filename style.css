@@ -763,6 +763,7 @@
         -o-transition: all .15s;
         transition: all .15s;
         cursor: pointer;
+        outline: none;
       }
 
       .btn_smile .smile {

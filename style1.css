@@ -327,6 +327,10 @@ footer {
         width: 70vw;
       }
 
+      form .select_ar ul li {
+        font-size: 2.5vw;
+      }
+
     footer p {
         font-size: 3vw;
     }

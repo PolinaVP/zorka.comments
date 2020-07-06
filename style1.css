@@ -317,9 +317,12 @@ footer {
         height: 6px;
       }
 
-    form label,
-    form .select_ar {
+    form label{
         flex-direction: column;
+    }
+
+    form .select_ar {
+        display: block;
     }
   
   form input,

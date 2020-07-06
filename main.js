@@ -38,37 +38,39 @@ $('#influencer').click(function () {
 })
 
 
-(function () {
-    'use strict';
-window.addEventListener('load', function () {
-    var forms = document.getElementsByClassName('needs-validation');
-    var validation = Array.prototype.filter.call(forms, function (form) {
-      $('form.open ~ .btn_smile').on('click', function (event) {
-          alert(123);
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        } else {
-          event.preventDefault();
-          var data = new FormData(this);
-          fetch('send.php', {
-            method: 'post',
-            body: data
-          })
-            // .then(res => {
-            //   if (res.ok) {
-            //     formTaskSuccess();
-            //   } else { formTaskError() }
+// (function () {
+//     'use strict';
+// window.addEventListener('load', function () {
+//     var forms = document.getElementsByClassName('needs-validation');
+//     var validation = Array.prototype.filter.call(forms, function (form) {
+//       $('form.open ~ .btn_smile').on('click', function (event) {
+//           alert(123);
+//         if (form.checkValidity() === false) {
+//           event.preventDefault();
+//           event.stopPropagation();
+//         } else {
+//           event.preventDefault();
+//           var data = new FormData(this);
+//           fetch('send.php', {
+//             method: 'post',
+//             body: data
+//           })
+//             // .then(res => {
+//             //   if (res.ok) {
+//             //     formTaskSuccess();
+//             //   } else { formTaskError() }
 
-            // });
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  });})();
+//             // });
+//         }
+//         form.classList.add('was-validated');
+//       }, false);
+//     });
+//   });})();
 
 
-
+$('form.open ~ .btn_smile').click(function(){
+    alert(123);
+})
 
 $('.btn_smile').click(function () {
     document.getElementById('contact_us').scrollIntoView();

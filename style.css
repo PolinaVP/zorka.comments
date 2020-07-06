@@ -882,6 +882,7 @@
 
       .thankYou {
         display: flex;
+        justify-content: center;
         position: relative;
         width: 90%;
         height: 90%;
@@ -898,6 +899,24 @@
         font-weight: normal;
         font-size: 2vw;
         line-height: 100%;
+      }
+
+      .thankYou .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+        height: 70%;
+      }
+
+      .thankYou .content h2{
+        font-family: "Libre Baskerville";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6vw;
+        line-height: 100%;
+        text-align: center;
+        color: #FFFF00;
       }
 
 

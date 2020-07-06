@@ -173,6 +173,36 @@ window.addEventListener('load', function () {
 }, false);
 
 
+(function () {
+    'use strict';
+window.addEventListener('load', function () {
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        } else {
+          event.preventDefault();
+          var data = new FormData(this);
+          fetch('send.php', {
+            method: 'post',
+            body: data
+          })
+            // .then(res => {
+            //   if (res.ok) {
+            //     formTaskSuccess();
+            //   } else { formTaskError() }
+
+            // });
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
 
 $(document).on('click touch', '.select_ar ul li', function(e){
     e.preventDefault();

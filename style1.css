@@ -278,11 +278,7 @@ form {
   }
 
 
-.thankYou .exit{
-    top: 7vw;
-    right: 7vw;
-    font-size: 5vw;
-}
+
 
 .thankYou .content h2{
     font-size: 7vw;
@@ -358,6 +354,12 @@ footer {
 
     form .select_ar {
         display: block;
+    }
+
+    .thankYou .exit{
+        top: 7vw;
+        right: 7vw;
+        font-size: 5vw;
     }
   
   form input,

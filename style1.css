@@ -286,6 +286,10 @@ footer {
     }
 
 @media screen and (max-width: 640px){
+    .main .video .dots {
+
+        top: calc(100% + 3px);
+    }
 
     .main .video .dots div {
         margin: 0 3px;

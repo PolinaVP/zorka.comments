@@ -827,6 +827,7 @@
         border-radius: 10px;
         width: 25vw;
         padding: 2vw 0;
+        z-index: 10;
       }
 
       .close_cookie{

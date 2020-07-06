@@ -162,8 +162,8 @@ window.addEventListener('load', function () {
 
         }, false);
 
-        $(document).on('click', function (field) {
-            field.hasClass('open').classList.add('was-validated');
+        $(document).on('click', function () {
+            $('.select_ar').hasClass('open').classList.add('was-validated');
         })
 
 

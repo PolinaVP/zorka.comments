@@ -822,6 +822,7 @@
         border:  1px solid rgba(255, 255, 255, 0.45);
         border-radius: 10px;
         width: 25vw;
+        margin: 5vw 0;
       }
 
       .popup_cookie p{
@@ -831,9 +832,11 @@
         font-size: 1.3vw;
         line-height: 192%;
         color: #ffffff;
+        text-align: center;
       }
 
       .popup_cookie a{
+        color: #ffffff;
         text-decoration: none;
       }
 
@@ -846,7 +849,8 @@
         color: #ffffff;
         border: none;
         outline: none;
-        
+        background-color: inherit;
+        margin: 0 auto;
       }
 
 

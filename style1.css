@@ -280,9 +280,7 @@ form {
 
 
 
-.thankYou .content h2{
-    font-size: 7vw;
-}
+
 
 
 footer {
@@ -360,6 +358,10 @@ footer {
         top: 7vw;
         right: 7vw;
         font-size: 5vw;
+    }
+
+    .thankYou .content h2{
+        font-size: 7vw;
     }
   
   form input,

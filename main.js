@@ -81,6 +81,7 @@ $(window).scroll(function () {
         $('.btn_smile').click(function () {
             document.getElementById('contact_us').scrollIntoView();
         });
+        return;
     }
 });
 

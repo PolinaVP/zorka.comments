@@ -163,10 +163,7 @@ window.addEventListener('load', function () {
         }, false);
 
         $(document).on('click', function (field) {
-            if (field.hasClass('open')){
-            field.classList.add('was-validated');
-           
-        }
+            field.hasClass('open').classList.add('was-validated');
         })
 
 

@@ -179,8 +179,8 @@ window.addEventListener('load', function () {
             };
 
             $(document).on('click', function () {
-                if (!$(this).hasClass('open')){
-                $(this).has('select:invalid').find('span').css('border-color', '#ff0');
+                if (! field.hasClass('open')){
+                field.has('select:invalid').find('span').css('border-color', '#ff0');
                
             }
             })

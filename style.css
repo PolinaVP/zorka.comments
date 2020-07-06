@@ -474,7 +474,7 @@
         font-family: "Libre Baskerville";
         font-style: normal;
         font-weight: normal;
-        font-size: 2.7vw;
+        font-size: 2.5vw;
         line-height: 180%;
         outline: none;
         cursor: pointer;
@@ -535,7 +535,7 @@
         display: inline-block;
         background: url(img/→.png) no-repeat;
         width: 2vw;
-        height: 2.7vw;
+        height: 2.5vw;
         background-position: center;
         background-size: contain;
         margin-left: 1.4vw;
@@ -562,6 +562,7 @@
         list-style: none;
         background-color: #282828;
         z-index: 10;
+        width: 30vw
       }
 
       

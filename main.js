@@ -179,7 +179,7 @@ window.addEventListener('load', function () {
             };
 
             $(document).on('click', function () {
-                if (! field.hasClass('open')){
+                if (!field.hasClass('open')){
                 field.has('select:invalid').find('span').css('border-color', '#ff0');
                
             }

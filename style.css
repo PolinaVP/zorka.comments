@@ -880,6 +880,27 @@
       }
 
 
+      .thankYou {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 90%;
+        background: linear-gradient(60.72deg, #FCCE03 9.63%, #5D05AA 53.24%, #32FDE5 104.78%);
+      }
+
+      .thankYou .exit {
+        position: absolute;
+        top: 3vw;
+        right: 3vw;
+        color: #FFFF00;
+        font-family: "Libre Baskerville";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vw;
+        line-height: 100%;
+      }
+
+
       footer {
         padding: 90px 0;
       }

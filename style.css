@@ -859,6 +859,10 @@
         text-decoration: none;
       }
 
+      .popup_cookie a:hover{
+        text-decoration: underline;
+      }
+
       .popup_cookie button{
         font-family: "Roboto";
         font-style: normal;

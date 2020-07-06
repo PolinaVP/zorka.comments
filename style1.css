@@ -341,7 +341,7 @@ footer {
         form textarea,
         form input::placeholder,
         form textarea::placeholder  {
-            font-size: 17px;
+            font-size: 19px;
             line-height: 30px;
     }
 }

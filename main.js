@@ -186,6 +186,12 @@ $('.select_ar').each(function () {
 
 
 
+
+
+$(document).on('click', function () {
+    $('.select_ar.open').addClass('was-validated');
+});
+
 $('span','.select_ar').on('click', function() {
     $(this).parent('.select_ar').toggleClass('open');
 });
@@ -219,9 +225,7 @@ window.addEventListener('load', function () {
 
         }, false);
 
-        $(document).on('click', function () {
-            $('.select_ar.open').addClass('was-validated');
-        })
+
 
 
     });

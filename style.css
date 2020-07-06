@@ -831,7 +831,7 @@
 
       .close_cookie{
         position: absolute;
-        top: 1vw;
+        top: 0.5vw;
         right: 1vw;
         color: #ffffff;
         font-family: "Roboto";

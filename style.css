@@ -609,10 +609,10 @@
         left: 0;
         position: static;
       }
-
+/* 
       form .select_ar.open .error_val{
        opacity: 0!important;
-      }
+      } */
 
       @-webkit-keyframes error-move{
         0%{

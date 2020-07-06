@@ -297,7 +297,8 @@ footer {
         height: 6px;
       }
 
-    form label {
+    form label,
+    form .select_ar {
         flex-direction: column;
     }
   

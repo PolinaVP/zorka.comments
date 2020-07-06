@@ -13,7 +13,7 @@
 
 let value = localStorage.getItem('zorka.comments_cookie');
 if (!value) {
-    setTimeout("$('.popup_cookie').css('display', 'flex')", 1000);
+    setTimeout("$('.popup_cookie').css('display', 'flex')", 5000);
 };
 
 $('.popup_cookie button').click(function () {

@@ -180,7 +180,7 @@ window.addEventListener('load', function () {
 
             $(document).on('click', function () {
                 if (!$(this).hasClass('open')){
-                if ($(this).find('select').matches(':invalid')) {
+                if ($(this).find('select').is(':invalid')) {
                     $(this).parent().css('border-color', '#ff0');
                 }
             }

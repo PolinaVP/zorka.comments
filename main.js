@@ -25,6 +25,10 @@ $('.popup_cookie button').click(function () {
     $('.popup_cookie').css('display', 'none');
   });
 
+  $('.thankYou .exit').click(function () {
+    $('.thankYou ').css('display', 'none');
+  });
+
 $('#performance').click(function () {
 
     if ($(this).hasClass('active')) {

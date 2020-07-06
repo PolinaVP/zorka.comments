@@ -78,19 +78,22 @@ $(window).scroll(function () {
         return;
     } else {
         $('#contact_us').removeClass('open');
+        $('.btn_smile').click(function () {
+            document.getElementById('contact_us').scrollIntoView();
+        });
     }
 });
 
-$('#contact_us.open ~ .btn_smile').click(function(){
-    alert(123);
-})
+// $('#contact_us.open ~ .btn_smile').click(function(){
+//     alert(123);
+// })
 
-$('.btn_smile').click(function () {
-    document.getElementById('contact_us').scrollIntoView();
-});
-$('.btn_smile').push(function () {
-    document.getElementById('contact_us').scrollIntoView();
-});
+// $('.btn_smile').click(function () {
+//     document.getElementById('contact_us').scrollIntoView();
+// });
+// $('.btn_smile').push(function () {
+//     document.getElementById('contact_us').scrollIntoView();
+// });
 
 window.addEventListener('load', function () {
     if ($('body').innerWidth() > 767) {

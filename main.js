@@ -74,7 +74,8 @@ $(window).scroll(function () {
         $('#contact_us').addClass('open');
         $('.btn_smile').click(function(){
             alert(123);
-        })
+        });
+        return;
     } else {
         $('#contact_us').removeClass('open');
     }

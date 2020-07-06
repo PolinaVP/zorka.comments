@@ -814,6 +814,13 @@
       }
 
 
+      .popup_cookie{
+        position: fixed;
+        bottom: 5vw;
+        left: 5vw;
+        border:  1px solid rgba(255, 255, 255, 0.45);
+      }
+
 
       footer {
         padding: 90px 0;

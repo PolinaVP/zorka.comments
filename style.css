@@ -815,6 +815,9 @@
 
 
       .popup_cookie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: #000000;
         position: fixed;
         bottom: 5vw;
@@ -850,7 +853,7 @@
         border: none;
         outline: none;
         background-color: inherit;
-        margin: 0 auto;
+        
       }
 
 

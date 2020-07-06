@@ -336,14 +336,14 @@ footer {
         font-size: 25px;
     }
 
-    /* form input,
+    form input,
         form .select_ar span,
         form textarea,
         form input::placeholder,
         form textarea::placeholder  {
-            font-size: 16px;
+            font-size: 17px;
             line-height: 30px;
-    } */
+    }
 }
 
 

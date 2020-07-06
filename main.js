@@ -11,7 +11,19 @@
 })();
 
 
+let value = localStorage.getItem('zorka.comments_cookie');
+if (!value) {
+    setTimeout("$('.popup_cookie').css('display', 'flex')", 1000);
+};
 
+$('.popup_cookie button').click(function () {
+    $('.popup_cookie').css('display', 'none');
+    localStorage.setItem('zorka.comments_cookie', true);
+  });
+
+  $('.popup_cookie .close_cookie').click(function () {
+    $('.popup_cookie').css('display', 'none');
+  });
 
 $('#performance').click(function () {
 

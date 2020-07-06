@@ -816,7 +816,7 @@
 
       .popup_cookie{
         position: relative;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         background-color: #000000;

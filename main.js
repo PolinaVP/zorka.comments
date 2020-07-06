@@ -131,7 +131,9 @@ $('.select_ar').each(function () {
 
 
 
-
+$('span','.select_ar').on('click', function() {
+    $(this).parent('.select_ar').toggleClass('open');
+});
 
 
 window.addEventListener('load', function () {
@@ -170,9 +172,7 @@ window.addEventListener('load', function () {
     });
 }, false);
 
-$('span','.select_ar').on('click', function() {
-    $(this).parent('.select_ar').toggleClass('open');
-});
+
 
 $(document).on('click touch', '.select_ar ul li', function(e){
     e.preventDefault();

@@ -524,9 +524,9 @@
       }
 
 
-      /* form .was-validated select:invalid{
+      form .was-validated select:invalid ~ span{ 
         border-color: #ff0;
-      } */
+      }
 
 
 

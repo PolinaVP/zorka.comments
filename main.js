@@ -129,27 +129,6 @@ $('.select_ar').each(function () {
     list.insertAfter($(this).find('select'));
 });
 
-$('span','.select_ar').on('click', function() {
-    $(this).parent('.select_ar').toggleClass('open');
-});
-
-$(document).on('click touch', '.select_ar ul li', function(e){
-    e.preventDefault();
-    let dropdown = $(this).parent().parent();
-    dropdown.find('option:selected').removeAttr('selected');
-    let text = $(this).text();
-    let active = dropdown.find($(`option:contains(${text})`));
-    active.attr('selected',true);
-    dropdown.find('span').text($(dropdown).find('option:selected').text());
-    dropdown.removeClass('open');
-})
-
-$(document).on('click', function(e){
-    let select_ar = $('.select_ar');
-    if(select_ar !== e.target&& !select_ar.has(e.target).length){
-        select_ar.removeClass('open');
-    }
-});
 
 
 
@@ -178,19 +157,44 @@ window.addEventListener('load', function () {
                 ), 500);
             };
 
-            $(document).on('click', function () {
-                if (!field.hasClass('open')){
-                field.has('select:invalid').find('span').css('border-color', '#ff0');
-               
-            }
-            })
+
 
 
         }, false);
 
+        $(document).on('click', function () {
+            if (field.hasClass('open')){
+            field.classList.add('was-validated');
+           
+        }
+        })
+
 
     });
 }, false);
+
+$('span','.select_ar').on('click', function() {
+    $(this).parent('.select_ar').toggleClass('open');
+});
+
+$(document).on('click touch', '.select_ar ul li', function(e){
+    e.preventDefault();
+    let dropdown = $(this).parent().parent();
+    dropdown.find('option:selected').removeAttr('selected');
+    let text = $(this).text();
+    let active = dropdown.find($(`option:contains(${text})`));
+    active.attr('selected',true);
+    dropdown.find('span').text($(dropdown).find('option:selected').text());
+    dropdown.removeClass('open');
+})
+
+$(document).on('click', function(e){
+    let select_ar = $('.select_ar');
+    if(select_ar !== e.target&& !select_ar.has(e.target).length){
+        select_ar.removeClass('open');
+    }
+});
+
 
 
 

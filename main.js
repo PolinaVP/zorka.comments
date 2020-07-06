@@ -139,7 +139,7 @@ $(document).on('click touch', '.select_ar ul li', function(e){
     dropdown.find('option:selected').removeAttr('selected');
     let text = $(this).text();
     let active = dropdown.find($(`option:contains(${text})`));
-    active.attr('selected');
+    active.attr('selected', true);
     dropdown.removeClass('open');
 })
 

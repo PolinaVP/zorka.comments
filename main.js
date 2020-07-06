@@ -87,7 +87,7 @@ $('.btn_smile').click(function () {
         let validation = Array.prototype.filter.call(fields, function (field) {
             field.classList.add('was-validated');
         if (field.matches('.was-validated:invalid')) {
-                let error = $(this).next('.error_val');
+                let error = $(this).parent().find('.error_val');
                 error.addClass("_animate");
                 
                 setTimeout((function () {

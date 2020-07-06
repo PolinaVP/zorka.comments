@@ -42,7 +42,7 @@ $('#influencer').click(function () {
 window.addEventListener('load', function () {
     var forms = document.getElementsByClassName('needs-validation');
     var validation = Array.prototype.filter.call(forms, function (form) {
-      $('.send_msg').on('click', function (event) {
+      $('form.open ~ .btn_smile').on('click', function (event) {
           alert(123);
         if (form.checkValidity() === false) {
           event.preventDefault();

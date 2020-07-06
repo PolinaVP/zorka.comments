@@ -285,6 +285,15 @@ footer {
         right: -25px;
         font-size: 25px;
     }
+
+    form input,
+        form select,
+        form textarea,
+        form input::placeholder,
+        form textarea::placeholder  {
+            font-size: 16px;
+            line-height: 30px;
+    }
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {

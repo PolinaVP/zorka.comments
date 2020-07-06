@@ -267,6 +267,21 @@ form {
     height: 50px;
 }
 
+.thankYou .content{
+    width: 80%;
+}
+
+.thankYou .logo{
+    top: 4vw;
+    left: 4vw;
+  }
+
+
+.thankYou .exit{
+    top: 5vw;
+    right: 5vw;
+    font-size: 4vw;
+}
 
 
 footer {

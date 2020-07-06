@@ -211,6 +211,10 @@ form {
       border-bottom:  4px solid rgba(255, 255, 255, 0.2);
   }
 
+  form .select_ar ul {
+    width: 50vw;
+  }
+
   form .select_ar ul li {
     font-size: 1.7vw;
     padding: 7px 10px;
@@ -318,6 +322,10 @@ footer {
       font-size: 3.7vw;
       margin: auto 0;
     }
+
+    form .select_ar ul {
+        width: 70vw;
+      }
 
     footer p {
         font-size: 3vw;

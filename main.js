@@ -68,14 +68,14 @@ $('#influencer').click(function () {
 //   });})();
 
 
-$('.open').next('.btn_smile').click(function(){
+$('form.open ~ .btn_smile').click(function(){
     alert(123);
 })
 
-$('.btn_smile').click(function () {
+$('form:not(.open) ~ .btn_smile').click(function () {
     document.getElementById('contact_us').scrollIntoView();
 });
-$('.btn_smile').push(function () {
+$('form:not(.open) ~ .btn_smile').push(function () {
     document.getElementById('contact_us').scrollIntoView();
 });
 

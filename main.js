@@ -133,7 +133,7 @@ $('span','.select_ar').on('click', function() {
     $(this).parent('.select_ar').toggleClass('open');
 });
 
-$('select_ar ul li').on('click touch', function(e){
+$(document).on('click touch', '.select_ar ul li', function(e){
     e.preventDefault();
     let dropdown = $(this).parent().parent();
     dropdown.removeClass('open');

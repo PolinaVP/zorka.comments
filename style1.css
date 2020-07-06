@@ -278,9 +278,13 @@ form {
 
 
 .thankYou .exit{
-    top: 5vw;
-    right: 5vw;
-    font-size: 4vw;
+    top: 7vw;
+    right: 7vw;
+    font-size: 5vw;
+}
+
+.thankYou .content h2{
+    font-size: 7vw;
 }
 
 

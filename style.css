@@ -825,7 +825,7 @@
         border:  1px solid rgba(255, 255, 255, 0.45);
         border-radius: 10px;
         width: 25vw;
-        margin: 5vw 0;
+        padding: 3vw 0;
       }
 
       .popup_cookie p{

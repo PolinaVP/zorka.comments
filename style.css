@@ -602,6 +602,12 @@
         position: static;
       }
 
+      form .was-validated:has(select:invalid) ~ .error_val{
+        opacity: 1;
+        left: 0;
+        position: static;
+      }
+
       @-webkit-keyframes error-move{
         0%{
           -webkit-transform:translateY(0);

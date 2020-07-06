@@ -178,11 +178,13 @@ window.addEventListener('load', function () {
                 ), 500);
             };
 
-            // field.on('blur', function () {
-            //     if ($(this).matches(':invalid')) {
-            //         $(this).parent().css('border-color', '#ff0');
-            //     }
-            // })
+            document.on('click', function () {
+                if (!$(this).hasClass('open')){
+                if ($(this).find('select').matches(':invalid')) {
+                    $(this).parent().css('border-color', '#ff0');
+                }
+            }
+            })
 
 
         }, false);

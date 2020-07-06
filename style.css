@@ -764,6 +764,7 @@
         transition: all .15s;
         cursor: pointer;
         outline: none;
+        z-index: 4;
       }
 
       .btn_smile .smile {

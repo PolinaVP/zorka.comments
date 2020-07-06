@@ -884,6 +884,10 @@
         display: flex;
         justify-content: center;
         position: fixed;
+        transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        left: 50%;
         width: 90%;
         height: 90%;
         background: linear-gradient(60.72deg, #FCCE03 9.63%, #5D05AA 53.24%, #32FDE5 104.78%);

@@ -178,7 +178,7 @@ window.addEventListener('load', function () {
                 ), 500);
             };
 
-            document.on('click', function () {
+            $(document).on('click', function () {
                 if (!$(this).hasClass('open')){
                 if ($(this).find('select').matches(':invalid')) {
                     $(this).parent().css('border-color', '#ff0');

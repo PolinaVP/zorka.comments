@@ -233,6 +233,26 @@ form {
 }
 
 
+.popup_cookie{
+    border-radius: 10px;
+    width: 70vw;
+    padding: 2vw 0;
+  }
+
+  .close_cookie{
+    top: 0.5vw;
+    right: 1vw;
+    font-size: 4vw;
+    line-height: 4vw;
+
+  }
+
+  .popup_cookie p,
+  .popup_cookie button{
+    font-size: 3.5vw;
+  }
+
+
 
 footer {
     padding: 60px 0;

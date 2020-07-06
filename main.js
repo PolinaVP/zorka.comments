@@ -163,7 +163,7 @@ window.addEventListener('load', function () {
         }, false);
 
         $(document).on('click', function () {
-            $('.select_ar.open').classList.add('was-validated');
+            $('.select_ar.open').addClass('was-validated');
         })
 
 

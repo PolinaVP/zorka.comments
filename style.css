@@ -891,6 +891,7 @@
         width: 90%;
         height: 90%;
         background: linear-gradient(60.72deg, #FCCE03 9.63%, #5D05AA 53.24%, #32FDE5 104.78%);
+        z-index: 200;
       }
 
       .thankYou .exit {

@@ -889,7 +889,7 @@
       }
 
       .thankYou .exit {
-        position: absolute;
+        position: fixed;
         top: 3vw;
         right: 3vw;
         color: #FFFF00;

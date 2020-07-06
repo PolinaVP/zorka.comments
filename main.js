@@ -136,7 +136,7 @@ $('span','.select_ar').on('click', function() {
 $(document).on('click touch', '.select_ar ul li', function(e){
     e.preventDefault();
     let dropdown = $(this).parent().parent();
-    let active = dropdown.find($('option').text($(this).text()));
+    let active = dropdown.find($('option').contains($(this).text()));
     active.prop('selected', true);
     dropdown.removeClass('open');
 })

@@ -815,10 +815,36 @@
 
 
       .popup_cookie{
+        background-color: #000000;
         position: fixed;
         bottom: 5vw;
         left: 5vw;
         border:  1px solid rgba(255, 255, 255, 0.45);
+      }
+
+      .popup_cookie p{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3vw;
+        line-height: 192%;
+        color: #ffffff;
+      }
+
+      .popup_cookie a{
+        text-decoration: none;
+      }
+
+      .popup_cookie button{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3vw;
+        line-height: 192%;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        
       }
 
 

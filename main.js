@@ -136,7 +136,6 @@ $('span','.select_ar').on('click', function() {
 $(documeent).on('click touch', 'select_ar ul li', function(e){
     e.preventDefault();
     let dropdown = $(this).parent().parent();
-    let active = $(this).parent().parent().hasClass('active');
     dropdown.removeClass('open');
 })
 

@@ -68,7 +68,7 @@ $('#influencer').click(function () {
 //   });})();
 
 
-$('form.open ~ .btn_smile').click(function(){
+$('form.open').next('.btn_smile').click(function(){
     alert(123);
 })
 

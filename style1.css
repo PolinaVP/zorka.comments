@@ -286,6 +286,13 @@ footer {
     }
 
 @media screen and (max-width: 640px){
+
+    .main .video .dots div {
+        margin: 0 3px;
+        width: 6px;
+        height: 6px;
+      }
+
     form label {
         flex-direction: column;
     }

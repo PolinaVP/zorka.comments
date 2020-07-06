@@ -79,13 +79,29 @@ $(window).scroll(function () {
     }
 });
 
-// $('#contact_us.open ~ .btn_smile').click(function(){
-//     alert(123);
-// })
+
 
 $('.btn_smile').click(function () {
     if ($('form').hasClass('open')){
-        alert(123);
+        let fields = document.querySelectorAll('form input, form select, form textarea');
+        let validation = Array.prototype.filter.call(fields, function (field) {
+            field.classList.add('was-validated');
+        if (field.matches('.was-validated:invalid')) {
+            $(this).next('.error_val').addClass("_animate");
+                let error = $(this).next('.error_val');
+                setTimeout((function () {
+                    error.removeClass("_animate")
+                }
+                ), 500);
+        }
+    }, false);
+
+    $('.btn_smile').addClass("_animate");
+
+    setTimeout((function () {
+        $('.btn_smile').removeClass("_animate")
+    }
+    ), 500);
     }else {
     document.getElementById('contact_us').scrollIntoView();
     }

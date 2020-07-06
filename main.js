@@ -67,6 +67,15 @@ $('#influencer').click(function () {
 //     });
 //   });})();
 
+$(window).scroll(function () {
+    let top_of_form = $('#contact_us').offset().top;
+    let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    if (bottom_of_screen > top_of_form) {
+        $('#contact_us').addClass('open');
+    } else {
+        $('#contact_us').removeClass('open');
+    }
+});
 
 $('form.open ~ .btn_smile').click(function(){
     alert(123);
@@ -90,15 +99,7 @@ $(window).on('resize', function () {
     }
 });
 
-$(window).scroll(function () {
-    let top_of_form = $('#contact_us').offset().top;
-    let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    if (bottom_of_screen > top_of_form) {
-        $('#contact_us').addClass('open');
-    } else {
-        $('#contact_us').removeClass('open');
-    }
-})
+
 
 $(window).scroll(function () {
     $('.container', '.main').each(function () {

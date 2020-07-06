@@ -198,7 +198,7 @@ window.addEventListener('load', function () {
 
             field.classList.add('was-validated');
             if (field.matches('.was-validated:invalid')) {
-                let error = $(this).next('.error_val');
+                let error = $(this).parent().find('.error_val');
                 error.addClass("_animate");
                 
                 setTimeout((function () {

@@ -83,7 +83,7 @@ $(window).scroll(function () {
 
 $('.btn_smile').click(function () {
     if ($('form').hasClass('open')){
-        let fields = document.querySelectorAll('form input, form select, form textarea');
+        let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
         let validation = Array.prototype.filter.call(fields, function (field) {
             field.classList.add('was-validated');
         if (field.matches('.was-validated:invalid')) {

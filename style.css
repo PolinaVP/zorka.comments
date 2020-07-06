@@ -894,6 +894,12 @@
         z-index: 200;
       }
 
+      .thankYou .logo{
+        position: absolute;
+        top: 3vw;
+        left: 3vw;
+      }
+
       .thankYou .exit {
         position: fixed;
         top: 3vw;

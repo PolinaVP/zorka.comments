@@ -106,23 +106,23 @@ $('.btn_smile').click(function () {
         let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
         for (let field of fields) {
             field.classList.add('was-validated');
-        // if (field.matches('.was-validated:invalid')) {
-        //         let error = $(this).parent().find('.error_val');
-        //         error.addClass("_animate");
-                
-        //         setTimeout((function () {
-        //             error.removeClass("_animate")
-        //         }
-        //         ), 500);
-        // }
     };
 
 
     let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
     console.log(error_fields);
-    
+    if (error_fields.length != 0){
+      let error =  error_fields.parent().find('.error_val');
+      error.addClass("_animate");
+                
+      setTimeout((function () {
+          error.removeClass("_animate")
+      }
+      ), 500);
     $('.btn_smile').addClass("_animate");
-
+    }else {
+        formTaskSuccess();
+    }
     setTimeout((function () {
         $('.btn_smile').removeClass("_animate")
     }

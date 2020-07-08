@@ -396,8 +396,8 @@
         height: 500px;
       }
 
-      .featured_on .forbes {
-        background: url(img/Forbes.png) no-repeat;
+      .featured_on .article {
+        background: url(img/article.png) no-repeat;
         background-position: center;
         width: 55%;
         background-size: 45%;

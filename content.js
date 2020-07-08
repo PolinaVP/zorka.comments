@@ -148,7 +148,7 @@ let setArticles = function(){
         div.innerHTML = `
         <div class="article" style="background-image: url(${articles[i].preview})"></div>
         <div class="container">
-            <h3><a href ="${articles[i].source}">${articles[i].preview}</a></h3>
+            <h3><a href ="${articles[i].source}">${articles[i].title}</a></h3>
         </div>
     `;
 

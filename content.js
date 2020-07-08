@@ -124,7 +124,7 @@ $(window).on('resize', setVideos);
 
 
 
-
+let articles;
 
 let setArticles = function () {
     let url = `articles/articles.json`;

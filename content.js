@@ -146,7 +146,7 @@ let setArticles = function(){
 
         let div = document.createElement('div');
         div.innerHTML = `
-        <div class="article" style="background: url(${articles[i].preview}) no-repeat"></div>
+        <div class="article" style="background-image: url(${articles[i].preview})"></div>
         <div class="container">
             <h3><a href ="${articles[i].source}">${articles[i].preview}</a></h3>
         </div>

@@ -397,12 +397,13 @@
       }
 
       .featured_on .article {
+        background-repeat: no-repeat;
         background-position: center;
         width: 55%;
         background-size: 45%;
       }
 
-      .featured_on .article > div {
+      .featured_on #article > div {
         width: 100%;
       }
 

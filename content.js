@@ -135,3 +135,5 @@ let setArticles = function () {
         });
     console.log(articles);
 }
+
+setArticles();

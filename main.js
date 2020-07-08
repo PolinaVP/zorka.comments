@@ -118,7 +118,7 @@ $('.btn_smile').click(function () {
     };
 
 
-    let error_fields = $('.was-validated:invalid') + $('.was-validated').has('select:invalid');
+    let error_fields = $('.was-validated:invalid').add('.was-validated').has('select:invalid');
     console.log(error_fields);
     
     $('.btn_smile').addClass("_animate");

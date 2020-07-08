@@ -125,7 +125,7 @@ $(window).on('resize', setVideos);
 
 let articles;
 
-let setArticles = function () {
+let loadArticles = function () {
     let url = `articles/articles.json`;
     fetch(url)
         .then(res => res.json())
@@ -135,4 +135,24 @@ let setArticles = function () {
         });
 }
 
-setArticles();
+loadArticles();
+
+
+let setArticles = function(){
+
+    document.getElementById('article').innerHTML = "";
+    for (let i = 0; i < articles.length; i++) {
+
+        let div = document.createElement('div');
+        div.innerHTML = `
+        <div class="article" style="background: url(${articles[i].preview}) no-repeat"></div>
+        <div class="container">
+            <h3><a href ="${articles[i].source}">${articles[i].preview}</a></h3>
+        </div>
+    `;
+
+    document.getElementById('article').append(div);
+
+}
+}
+

@@ -117,7 +117,6 @@ let setMain = function (marketing) {
             setContent(videos);
             setVideos();
         });
-    console.log(videos);
 }
 setMain("influencer");
 $(window).on('resize', setVideos);
@@ -132,8 +131,8 @@ let setArticles = function () {
         .then(res => res.json())
         .then(data => {
             articles = data;
+            console.log(articles);
         });
-    console.log(articles);
 }
 
 setArticles();

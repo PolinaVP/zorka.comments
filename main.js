@@ -55,34 +55,6 @@ $('#influencer').click(function () {
 })
 
 
-// (function () {
-//     'use strict';
-// window.addEventListener('load', function () {
-//     var forms = document.getElementsByClassName('needs-validation');
-//     var validation = Array.prototype.filter.call(forms, function (form) {
-//       $('form.open ~ .btn_smile').on('click', function (event) {
-//           alert(123);
-//         if (form.checkValidity() === false) {
-//           event.preventDefault();
-//           event.stopPropagation();
-//         } else {
-//           event.preventDefault();
-//           var data = new FormData(this);
-//           fetch('send.php', {
-//             method: 'post',
-//             body: data
-//           })
-//             // .then(res => {
-//             //   if (res.ok) {
-//             //     formTaskSuccess();
-//             //   } else { formTaskError() }
-
-//             // });
-//         }
-//         form.classList.add('was-validated');
-//       }, false);
-//     });
-//   });})();
 
 $(window).scroll(function () {
     let top_of_form = $('#contact_us').offset().top;
@@ -106,27 +78,46 @@ $('.btn_smile').click(function () {
         let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
         for (let field of fields) {
             field.classList.add('was-validated');
-    };
+        };
 
 
-    let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
-    console.log(error_fields);
-    if (error_fields.length != 0){
-      let error =  error_fields.parent().find('.error_val');
-      error.addClass("_animate");
+        let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
+        console.log(error_fields);
+        if (error_fields.length != 0){
+
+            let error =  error_fields.parent().find('.error_val');
+
+            error.addClass("_animate");
                 
-      setTimeout((function () {
-          error.removeClass("_animate")
-      }
-      ), 500);
-    $('.btn_smile').addClass("_animate");
-    }else {
-        formTaskSuccess();
-    }
-    setTimeout((function () {
-        $('.btn_smile').removeClass("_animate")
-    }
-    ), 500);
+            setTimeout((function () {
+            error.removeClass("_animate")
+            }), 500);
+
+            $('.btn_smile').addClass("_animate");
+
+            setTimeout((function () {
+                $('.btn_smile').removeClass("_animate")
+            }), 500);
+
+        }else {
+            var data = new FormData(contact_us);
+            fetch('send.php', {
+                method: 'post',
+                body: data
+            })
+            .then(res => {
+              if (res.ok) {
+                formTaskSuccess();
+              } else { 
+                    $('.btn_smile').addClass("_animate");
+
+                    setTimeout((function () {
+                        $('.btn_smile').removeClass("_animate")
+                    }), 500);}
+
+            });
+        };
+    
     }else {
     document.getElementById('contact_us').scrollIntoView();
     }

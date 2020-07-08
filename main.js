@@ -27,6 +27,7 @@ $('.popup_cookie button').click(function () {
 
   $('.thankYou .exit').click(function () {
     $('.thankYou ').css('display', 'none');
+    $('.btn_smile').css('display', 'block');
   });
 
 $('#performance').click(function () {
@@ -95,24 +96,29 @@ $(window).scroll(function () {
     }
 });
 
-
+function formTaskSuccess() {
+    $('.thankYou').css('display', 'flex');
+    $('.btn_smile').css('display', 'none');
+  }
 
 $('.btn_smile').click(function () {
     if ($('form').hasClass('open')){
         let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
         let validation = Array.prototype.filter.call(fields, function (field) {
             field.classList.add('was-validated');
-        if (field.matches('.was-validated:invalid')) {
-                let error = $(this).parent().find('.error_val');
-                error.addClass("_animate");
+        // if (field.matches('.was-validated:invalid')) {
+        //         let error = $(this).parent().find('.error_val');
+        //         error.addClass("_animate");
                 
-                setTimeout((function () {
-                    error.removeClass("_animate")
-                }
-                ), 500);
-        }
+        //         setTimeout((function () {
+        //             error.removeClass("_animate")
+        //         }
+        //         ), 500);
+        // }
     }, false);
 
+
+    
     $('.btn_smile').addClass("_animate");
 
     setTimeout((function () {
@@ -123,9 +129,7 @@ $('.btn_smile').click(function () {
     document.getElementById('contact_us').scrollIntoView();
     }
 });
-// $('.btn_smile').push(function () {
-//     document.getElementById('contact_us').scrollIntoView();
-// });
+
 
 window.addEventListener('load', function () {
     if ($('body').innerWidth() > 767) {
@@ -209,7 +213,8 @@ $('.select_ar').each(function () {
 
 window.addEventListener('load', function () {
     let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
-    let validation = Array.prototype.filter.call(fields, function (field) {
+    // let validation = Array.prototype.filter.call(fields, function (field) 
+    for (let field of fields){
         field.addEventListener('blur', function (event) {
 
             field.classList.add('was-validated');
@@ -238,7 +243,7 @@ window.addEventListener('load', function () {
 
 
 
-    });
+    };
 }, false);
 
 $(document).on('click', function () {
@@ -270,23 +275,3 @@ $(document).on('click', function(e){
 });
 
 
-
-
-
-
-
-
-// else {
-//     event.preventDefault();
-//     var data = new FormData(this);
-//     fetch('send.php', {
-//         method: 'post',
-//         body: data
-//     })
-//         .then(res => {
-//             if (res.ok) {
-//                 formTaskSuccess();
-//             } else { formTaskError() }
-
-//         });
-// }

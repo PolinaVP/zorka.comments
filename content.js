@@ -132,6 +132,7 @@ let loadArticles = function () {
         .then(data => {
             articles = data;
             console.log(articles);
+            setArticles();
         });
 }
 

@@ -405,6 +405,7 @@
 
       .featured_on #article > div {
         width: 100%;
+        display: flex;
       }
 
       .featured_on .container {

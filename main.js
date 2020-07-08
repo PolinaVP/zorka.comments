@@ -104,7 +104,7 @@ function formTaskSuccess() {
 $('.btn_smile').click(function () {
     if ($('form').hasClass('open')){
         let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
-        let validation = Array.prototype.filter.call(fields, function (field) {
+        for (let field of fields) {
             field.classList.add('was-validated');
         // if (field.matches('.was-validated:invalid')) {
         //         let error = $(this).parent().find('.error_val');
@@ -115,10 +115,11 @@ $('.btn_smile').click(function () {
         //         }
         //         ), 500);
         // }
-    }, false);
+    };
 
 
-    
+    let error_fields = $('.was-validated:invalid, was-validated select:invalid');
+    console.log(error_fields);
     $('.btn_smile').addClass("_animate");
 
     setTimeout((function () {
@@ -213,7 +214,6 @@ $('.select_ar').each(function () {
 
 window.addEventListener('load', function () {
     let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
-    // let validation = Array.prototype.filter.call(fields, function (field) 
     for (let field of fields){
         field.addEventListener('blur', function (event) {
 

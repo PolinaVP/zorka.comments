@@ -126,4 +126,12 @@ $(window).on('resize', setVideos);
 
 
 
-
+let setArticles = function () {
+    let url = `articles/articles.json`;
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            articles = data;
+        });
+    console.log(articles);
+}

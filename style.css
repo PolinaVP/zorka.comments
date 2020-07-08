@@ -421,6 +421,10 @@
         line-height: 147%;
       }
 
+      .featured_on div h3 a {
+        text-decoration: none;
+      }
+
        form {
         padding: 0 6vw;
       } 

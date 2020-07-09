@@ -197,8 +197,17 @@
         -webkit-transform: translateY(-50%);
         right: -45px;
         cursor: pointer;
-        font-size: 35px;
         transition: all .3s;
+      }
+
+      .main .video .next_video i{
+        
+        border: solid #ffffff;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 10px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
       }
 
       .main .video .prev_video {
@@ -399,11 +408,10 @@
         color: #A06BD5;
       }
 
-      .main > div:nth-child(even) .next_video {
-        color: #202020;
-      }
 
-      .main > div:nth-child(even) .prev_video i{
+
+      .main > div:nth-child(even) .prev_video i,
+      .main > div:nth-child(even) .next_video i{
         border-color: #202020;
       }
 

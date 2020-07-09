@@ -14,7 +14,7 @@ let setContent = function (videos) {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen ></iframe>
                 <div class="play"></div>    
-                <div class="next_video">&#10095</div> 
+                <div class="next_video"><i class= arrow-right></i></div> 
                 <div class="dots"></div>   
             </div>
             <div class="container">

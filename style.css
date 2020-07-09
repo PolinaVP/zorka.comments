@@ -623,6 +623,24 @@
        opacity: 0!important;
       }
 
+       form .checkbox:checked + .custom_checkbox::before {
+        background-image: url(img/checkbox.png);
+    }
+
+     form .custom_checkbox::before {
+      content: "";
+      display: inline-block;
+      margin-right: 26px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: none;
+      border-radius: 5px;
+  }
+
       @-webkit-keyframes error-move{
         0%{
           -webkit-transform:translateY(0);

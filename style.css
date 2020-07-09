@@ -403,6 +403,10 @@
         color: #202020;
       }
 
+      .main > div:nth-child(even) .prev_video i{
+        border-color: #202020;
+      }
+
       .featured_on {
         background-color: #ffffff;
         padding: 55px 0 190px;

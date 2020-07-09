@@ -31,6 +31,7 @@ let setContent = function (videos) {
 
         if (videos[i].video.length < 2) {
             div.querySelector('.next_video').style.display = 'none';
+            div.querySelector('.prev_video').style.display = 'none';
             div.querySelector('.dots').style.display = 'none';
         }
 

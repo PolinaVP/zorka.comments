@@ -73,8 +73,8 @@ let setContent = function (videos) {
 
 
 
-    $('.next_video', '.video').click(function (e) {
-        let i = $(this).parent('.video').index(e.target);
+    $('.next_video', '.video').click(function () {
+        let i = $(this).parent('.video').parent().index();
         let part = $(this).prevAll('iframe').attr('part');
         part++;
         if (part >= videos[i].video.length) {

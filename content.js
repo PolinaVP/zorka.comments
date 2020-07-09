@@ -92,6 +92,26 @@ let setContent = function (videos) {
          $(this).prevAll('img').attr('src', videos[i].preview[part]);
     })
 
+
+$('.prev_video', '.video').click(function () {
+    let i = $(this).parent('.video').parent().index();
+    let part = $(this).prevAll('iframe').attr('part');
+    part--;
+    if (part < 0) {
+        part = videos[i].video.length - 1;
+    };
+
+        $(this).nextAll('iframe').attr('part', part);
+        $(this).nextAll('iframe').attr('src', videos[i].video[part]);
+        $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
+        $(this).parent().find('.dots div').removeClass('active');
+        $(this).parent().find(`.dots div:nth-child(${part + 1})`).addClass('active');
+     if (videos[i].description[part]){
+        $(this).parent().parent().find('p').html(videos[i].description[part]);
+     }
+     $(this).nextAll('img').attr('src', videos[i].preview[part]);
+})
+
 };
 
 

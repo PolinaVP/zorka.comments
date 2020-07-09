@@ -213,6 +213,7 @@
       }
 
       .main .video .prev_video i{
+        display: inline-block;
         border: solid #ffffff;
         border-width: 0 3px 3px;
         padding: 3px;

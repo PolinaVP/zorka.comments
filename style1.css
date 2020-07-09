@@ -155,8 +155,16 @@ header{
 }
 
 .main .video .next_video {
-    right: -30px;
-    font-size: 30px;
+    right: -30px;  
+} 
+
+.main .video .prev_video {
+    left: -30px;  
+} 
+
+.main .video .next_video i,
+.main .video .prev_video i{
+    padding: 4px;
 }
 
 .main .container .video iframe{

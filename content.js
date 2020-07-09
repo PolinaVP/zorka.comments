@@ -8,6 +8,7 @@ let setContent = function (videos) {
         let div = document.createElement('div');
         div.innerHTML = `
     <div class="video">
+                <div class="prev_video"><i class= arrow-left></i></div> 
                 <img class="start_video" src=${videos[i].preview[0]} alt="">
                 <iframe    frameborder="0" part=0
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

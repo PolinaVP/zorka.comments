@@ -201,6 +201,30 @@
         transition: all .3s;
       }
 
+      .main .video .prev_video {
+
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        right: 45px;
+        cursor: pointer;
+        transition: all .3s;
+      }
+
+      .main .video .prev_video i{
+        border: solid #ffffff;
+        border-width: 0 3px 3px;
+        padding: 3px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      .main .video .next_video:hover {
+        transform: translateY(-50%) translateX(-5px);
+        -webkit-transform: translateY(-50%) translateX(-5px);
+      }
+
       .main .video .next_video:hover {
         transform: translateY(-50%) translateX(5px);
         -webkit-transform: translateY(-50%) translateX(5px);

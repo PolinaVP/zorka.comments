@@ -419,7 +419,9 @@ footer {
         form .select_ar span,
         form textarea,
         form input::placeholder,
-        form textarea::placeholder  {
+        form textarea::placeholder,
+        form label a,
+        form label p {
             font-size: 19px;
             line-height: 30px;
     }

@@ -303,9 +303,9 @@ footer {
       height: 73%;
   }
 
-  .main .video .next_video {
-    right: -30px;
-    font-size: 30px;
+  .main .video .next_video i,
+  .main .video .prev_video i {
+    padding: 6px;
   }
     .main .container .underline h3 {
   border-width: 3px;

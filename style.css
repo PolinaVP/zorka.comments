@@ -207,7 +207,7 @@
         top: 50%; 
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        left: 45px;
+        left: -45px;
         cursor: pointer;
         transition: all .3s;
       }

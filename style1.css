@@ -189,6 +189,10 @@ header{
    
    }
 
+   .featured_on > div {
+       height: auto;
+   }
+
 .featured_on > div > div {
     flex-direction: column;
     justify-content: center;

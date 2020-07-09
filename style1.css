@@ -428,7 +428,10 @@ footer {
 
     .main .video .next_video {
         right: -25px;
-        font-size: 25px;
+    }
+
+    .main .video .prev_video {
+        left: -25px;
     }
 
     form input,

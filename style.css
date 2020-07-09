@@ -222,7 +222,7 @@
         -webkit-transform: rotate(135deg);
       }
 
-      .main .video .next_video:hover {
+      .main .video .prev_video:hover {
         transform: translateY(-50%) translateX(-5px);
         -webkit-transform: translateY(-50%) translateX(-5px);
       }

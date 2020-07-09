@@ -95,12 +95,12 @@ let setContent = function (videos) {
 
 $('.prev_video', '.video').click(function () {
     let i = $(this).parent('.video').parent().index();
-    let part = $(this).prevAll('iframe').attr('part');
+    let part = $(this).nextAll('iframe').attr('part');
     part--;
     if (part < 0) {
         part = videos[i].video.length - 1;
     };
-    console.log(part);
+
 
         $(this).nextAll('iframe').attr('part', part);
         $(this).nextAll('iframe').attr('src', videos[i].video[part]);

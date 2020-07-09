@@ -435,16 +435,16 @@ footer {
 
 
     .main .video .next_video {
-        right: -25px;  
+        right: -23px;  
     } 
     
     .main .video .prev_video {
-        left: -25px;  
+        left: -23px;  
     } 
     
     .main .video .next_video i,
     .main .video .prev_video i{
-        padding: 4px;
+        padding: 5px;
     }
 
     form input,

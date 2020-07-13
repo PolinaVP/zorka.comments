@@ -458,6 +458,8 @@
       }
 
       .featured_on .container {
+        display: inline-block;
+        height: 100%;
        margin: auto;
        margin-left: 0;
       }

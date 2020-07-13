@@ -180,7 +180,7 @@ let setArticles = function () {
 }
 
 let position = 0;
-let list = $('ul', '#article');
+let list = $('#article ul');
 $('#article .next_article').click(function () {
     let width = $(this).width();
     position -= width;

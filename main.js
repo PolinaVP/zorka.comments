@@ -207,6 +207,7 @@ $('.select_ar').each(function () {
 
 window.addEventListener('load', function () {
     let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
+    let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
     for (let field of fields) {
         field.addEventListener('blur', function (event) {
 
@@ -227,6 +228,11 @@ window.addEventListener('load', function () {
                 }
                 ), 500);
             };
+            if (error_fields.length = 0) {
+
+                $('form .checkbox_policy').css('display', 'flex');
+
+            }
 
 
 
@@ -238,13 +244,8 @@ window.addEventListener('load', function () {
 
     };
 
-    let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
-    console.log(error_fields);
-    if (error_fields.length = 0) {
 
-        $('form .checkbox_policy').css('display', 'flex');
 
-    }
 }, false);
 
 $(document).on('click', function () {

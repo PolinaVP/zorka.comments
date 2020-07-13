@@ -493,7 +493,7 @@
         top: 50%; 
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        right: 40px;
+        right: 80px;
         cursor: pointer;
         transition: all .3s;
       }
@@ -514,7 +514,7 @@
         top: 50%; 
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        left: 40px;
+        left: 80px;
         cursor: pointer;
         transition: all .3s;
       }

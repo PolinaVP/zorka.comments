@@ -427,7 +427,7 @@
         line-height: 180%;
       }
 
-      .featured_on > div:nth-child(2) {
+      .featured_on #article {
         width: 80%;
         margin: 33px auto 0;
         display: flex;

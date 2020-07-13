@@ -460,12 +460,10 @@
       }
 
       .featured_on .container {
-        display: inline-flex;
-        justify-content: center;
         vertical-align: top;
         height: 100%;
-       margin: auto;
-       margin-left: 0;
+        margin: auto;
+        margin-left: 0;
       }
 
       .featured_on div h3 {
@@ -474,9 +472,7 @@
         border-bottom: 4px solid #32FDE5;
         font-size: 2.8vw;
         line-height: 147%;
-        vertical-align: middle;
-        margin: auto;
-        margin-left: 0;
+
       }
 
       .featured_on div h3 a {

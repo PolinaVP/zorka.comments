@@ -182,7 +182,7 @@ let setArticles = function () {
 let position = 0;
 let list = $('#article ul');
 $('#article .next_article').click(function () {
-    let width = $(this).width();
+    let width = $('#article').width();
     position -= width;
     position = Math.max(position, -width * (articles.length - 1));
     list.css('margin-left', `${position + 'px'}`);

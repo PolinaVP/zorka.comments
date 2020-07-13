@@ -166,16 +166,18 @@ let setArticles = function () {
 
     for (let i = 0; i < articles.length; i++) {
 
-        let div = document.createElement('div');
-        div.innerHTML = `
+        let li = document.createElement('li');
+        li.innerHTML = `
         <div class="article" style="background-image: url(${articles[i].preview})"></div>
         <div class="container">
             <h3><a href ="${articles[i].source}">${articles[i].title}</a></h3>
         </div>
     `;
 
-        document.getElementById('article').querySelector('.prev_article').after(div);
+        document.getElementById('article').querySelector('.prev_article').after(li);
 
     }
 }
+
+
 

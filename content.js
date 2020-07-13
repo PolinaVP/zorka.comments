@@ -188,5 +188,12 @@ $('#article .next_article').click(function () {
     list.css('margin-left', `${position + 'px'}`);
 });
 
+$('#article .prev_article').click(function () {
+    let width = $('#article').width();
+    position += width;
+    position = Math.min(position, 0);
+    list.css('margin-left', `${position + 'px'}`);
+});
+
 
 

@@ -420,6 +420,7 @@
         padding: 55px 0 190px;
         flex-direction: column;
         height: auto !important;
+        position: relative;
       }
       .featured_on h2 {
         color: #242424;
@@ -492,7 +493,7 @@
         top: 50%; 
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        right: -40px;
+        right: 40px;
         cursor: pointer;
         transition: all .3s;
       }
@@ -513,7 +514,7 @@
         top: 50%; 
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        left: -40px;
+        left: 40px;
         cursor: pointer;
         transition: all .3s;
       }

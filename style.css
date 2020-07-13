@@ -453,6 +453,8 @@
       .featured_on #article li {
         width: 100%;
         height: 100%;
+        margin: 0;
+        padding: 0;
         display: inline-block;
       }
       .featured_on #article li > div {

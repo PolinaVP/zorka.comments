@@ -181,7 +181,7 @@ let setArticles = function () {
 
 let position = 0;
 let list = $('ul', '#article');
-$('.next_article', '#article').click(function () {
+$('#article .next_article').click(function () {
     let width = $(this).width();
     position -= width;
     position = Math.max(position, -width * (articles.length - 1));

@@ -37,7 +37,7 @@ let setContent = function (videos) {
 
         document.getElementById('main').append(div);
 
-        for (let n = 0; n < videos[i].video.length; n++){
+        for (let n = 0; n < videos[i].video.length; n++) {
             let dot = document.createElement('div');
 
             $('.dots')[i].append(dot);
@@ -45,8 +45,8 @@ let setContent = function (videos) {
         }
 
         $('.dots div:first-child').addClass('active');
-    
-    
+
+
     };
 
     $('img', '.video').click(function (e) {
@@ -81,25 +81,25 @@ let setContent = function (videos) {
             part = 0;
         };
 
-            $(this).prevAll('iframe').attr('part', part);
-            $(this).prevAll('iframe').attr('src', videos[i].video[part]);
-            $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
-            $(this).parent().find('.dots div').removeClass('active');
-            $(this).parent().find(`.dots div:nth-child(${part + 1})`).addClass('active');
-         if (videos[i].description[part]){
+        $(this).prevAll('iframe').attr('part', part);
+        $(this).prevAll('iframe').attr('src', videos[i].video[part]);
+        $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
+        $(this).parent().find('.dots div').removeClass('active');
+        $(this).parent().find(`.dots div:nth-child(${part + 1})`).addClass('active');
+        if (videos[i].description[part]) {
             $(this).parent().parent().find('p').html(videos[i].description[part]);
-         }
-         $(this).prevAll('img').attr('src', videos[i].preview[part]);
+        }
+        $(this).prevAll('img').attr('src', videos[i].preview[part]);
     })
 
 
-$('.prev_video', '.video').click(function () {
-    let i = $(this).parent('.video').parent().index();
-    let part = $(this).nextAll('iframe').attr('part');
-    part--;
-    if (part < 0) {
-        part = videos[i].video.length - 1;
-    };
+    $('.prev_video', '.video').click(function () {
+        let i = $(this).parent('.video').parent().index();
+        let part = $(this).nextAll('iframe').attr('part');
+        part--;
+        if (part < 0) {
+            part = videos[i].video.length - 1;
+        };
 
 
         $(this).nextAll('iframe').attr('part', part);
@@ -107,11 +107,11 @@ $('.prev_video', '.video').click(function () {
         $(this).parent().parent().find('a').attr('href', videos[i].source[part]);
         $(this).parent().find('.dots div').removeClass('active');
         $(this).parent().find(`.dots div:nth-child(${part + 1})`).addClass('active');
-     if (videos[i].description[part]){
-        $(this).parent().parent().find('p').html(videos[i].description[part]);
-     }
-     $(this).nextAll('img').attr('src', videos[i].preview[part]);
-})
+        if (videos[i].description[part]) {
+            $(this).parent().parent().find('p').html(videos[i].description[part]);
+        }
+        $(this).nextAll('img').attr('src', videos[i].preview[part]);
+    })
 
 };
 
@@ -162,9 +162,8 @@ let loadArticles = function () {
 loadArticles();
 
 
-let setArticles = function(){
+let setArticles = function () {
 
-    document.getElementById('article').innerHTML = "";
     for (let i = 0; i < articles.length; i++) {
 
         let div = document.createElement('div');
@@ -175,8 +174,8 @@ let setArticles = function(){
         </div>
     `;
 
-    document.getElementById('article').append(div);
+        document.getElementById('article').querySelector('.prev_article').after(div);
 
-}
+    }
 }
 

@@ -456,7 +456,7 @@
       .featured_on #article li {
         width: 80vw;
         height: 100%;
-        display: inline-flex;
+        display: inline-block;
       }
 
       .featured_on .container {

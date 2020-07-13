@@ -764,6 +764,7 @@ form .checkbox {
 
 .checkbox_policy {
   margin-top: 90px;
+  display: none;
 }
 
       @-webkit-keyframes error-move{

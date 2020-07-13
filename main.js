@@ -19,16 +19,16 @@ if (!value) {
 $('.popup_cookie button').click(function () {
     $('.popup_cookie').css('display', 'none');
     localStorage.setItem('zorka.comments_cookie', true);
-  });
+});
 
-  $('.popup_cookie .close_cookie').click(function () {
+$('.popup_cookie .close_cookie').click(function () {
     $('.popup_cookie').css('display', 'none');
-  });
+});
 
-  $('.thankYou .exit').click(function () {
+$('.thankYou .exit').click(function () {
     $('.thankYou ').css('display', 'none');
     $('.btn_smile').css('display', 'block');
-  });
+});
 
 $('#performance').click(function () {
 
@@ -71,10 +71,10 @@ $(window).scroll(function () {
 function formTaskSuccess() {
     $('.thankYou').css('display', 'flex');
     $('.btn_smile').css('display', 'none');
-  }
+}
 
 $('.btn_smile').click(function () {
-    if ($('form').hasClass('open')){
+    if ($('form').hasClass('open')) {
         let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
         for (let field of fields) {
             field.classList.add('was-validated');
@@ -83,14 +83,14 @@ $('.btn_smile').click(function () {
 
         let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
         console.log(error_fields);
-        if (error_fields.length != 0){
+        if (error_fields.length != 0) {
 
-            let error =  error_fields.parent().find('.error_val');
+            let error = error_fields.parent().find('.error_val');
 
             error.addClass("_animate");
-                
+
             setTimeout((function () {
-            error.removeClass("_animate")
+                error.removeClass("_animate")
             }), 500);
 
             $('.btn_smile').addClass("_animate");
@@ -99,27 +99,28 @@ $('.btn_smile').click(function () {
                 $('.btn_smile').removeClass("_animate")
             }), 500);
 
-        }else {
+        } else {
             var data = new FormData(contact_us);
             fetch('send.php', {
                 method: 'post',
                 body: data
             })
-            .then(res => {
-              if (res.ok) {
-                formTaskSuccess();
-              } else { 
-                    $('.btn_smile').addClass("_animate");
+                .then(res => {
+                    if (res.ok) {
+                        formTaskSuccess();
+                    } else {
+                        $('.btn_smile').addClass("_animate");
 
-                    setTimeout((function () {
-                        $('.btn_smile').removeClass("_animate")
-                    }), 500);}
+                        setTimeout((function () {
+                            $('.btn_smile').removeClass("_animate")
+                        }), 500);
+                    }
 
-            });
+                });
         };
-    
-    }else {
-    document.getElementById('contact_us').scrollIntoView();
+
+    } else {
+        document.getElementById('contact_us').scrollIntoView();
     }
 });
 
@@ -206,14 +207,14 @@ $('.select_ar').each(function () {
 
 window.addEventListener('load', function () {
     let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
-    for (let field of fields){
+    for (let field of fields) {
         field.addEventListener('blur', function (event) {
 
             field.classList.add('was-validated');
             if (field.matches('.was-validated:invalid')) {
                 let error = $(this).parent().find('.error_val');
                 error.addClass("_animate");
-                
+
                 setTimeout((function () {
                     error.removeClass("_animate")
                 }
@@ -236,32 +237,40 @@ window.addEventListener('load', function () {
 
 
     };
+
+    let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
+    console.log(error_fields);
+    if (error_fields.length = 0) {
+
+        $('form .checkbox_policy').css('display', 'flex');
+
+    }
 }, false);
 
 $(document).on('click', function () {
     $('.select_ar.open').addClass('was-validated');
 });
 
-$('span','.select_ar').on('click', function() {
+$('span', '.select_ar').on('click', function () {
     $(this).parent('.select_ar').toggleClass('open');
 });
 
 
 
-$(document).on('click touch', '.select_ar ul li', function(e){
+$(document).on('click touch', '.select_ar ul li', function (e) {
     e.preventDefault();
     let dropdown = $(this).parent().parent();
     dropdown.find('option:selected').removeAttr('selected');
     let text = $(this).text();
     let active = dropdown.find($(`option:contains(${text})`));
-    active.attr('selected',true);
+    active.attr('selected', true);
     dropdown.find('span').text($(dropdown).find('option:selected').text());
     dropdown.removeClass('open');
 })
 
-$(document).on('click', function(e){
+$(document).on('click', function (e) {
     let select_ar = $('.select_ar');
-    if(select_ar !== e.target&& !select_ar.has(e.target).length){
+    if (select_ar !== e.target && !select_ar.has(e.target).length) {
         select_ar.removeClass('open');
     }
 });

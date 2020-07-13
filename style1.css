@@ -201,7 +201,7 @@ header{
        height: auto;
    }
 
-.featured_on > div > div {
+.featured_on > #article li > div {
     flex-direction: column;
     justify-content: center;
     height: auto;

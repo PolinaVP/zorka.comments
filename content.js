@@ -185,14 +185,14 @@ let setArticles = function () {
 
 let position = 0;
 let list = $('#article ul');
-$('#article .next_article').click(function () {
+$('.featured_on .next_article').click(function () {
     let width = $('#article').width();
     position -= width;
     position = Math.max(position, -width * (articles.length - 1));
     list.css('margin-left', `${position + 'px'}`);
 });
 
-$('#article .prev_article').click(function () {
+$('.featured_on .prev_article').click(function () {
     let width = $('#article').width();
     position += width;
     position = Math.min(position, 0);

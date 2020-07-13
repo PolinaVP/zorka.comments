@@ -454,7 +454,7 @@
        }
 
       .featured_on #article li {
-        width: 8vw;
+        width: 80vw;
         height: 100%;
         display: inline-flex;
       }

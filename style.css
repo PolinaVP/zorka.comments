@@ -464,6 +464,10 @@
         color: #FFFFFF;
       }
 
+      .featured_on #article {
+        position: relative;
+      }
+
 
       .featured_on #article .next_article {
         position: absolute;

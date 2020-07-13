@@ -448,6 +448,7 @@
          list-style: none;
           transition: margin-left 1s;
           height: 100%;
+          white-space: nowrap;
        }
 
       .featured_on #article li {

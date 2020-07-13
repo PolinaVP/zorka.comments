@@ -443,6 +443,9 @@
        .featured_on ul{
          list-style: none;
           transition: margin-left 1s;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
        }
 
       .featured_on #article li {

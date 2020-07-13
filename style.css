@@ -442,7 +442,7 @@
       }
        .featured_on ul{
          list-style: none;
-          transition: margin-left 500ms;
+          transition: margin-left 1s;
        }
 
       .featured_on #article li {

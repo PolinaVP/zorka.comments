@@ -444,6 +444,9 @@
       .featured_on #article > div:not(.next_article):not(.prev_article) {
         width: 100%;
         display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
 
       .featured_on .container {

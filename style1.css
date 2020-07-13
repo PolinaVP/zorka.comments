@@ -198,7 +198,7 @@ header{
    }
 
    .featured_on > #article {
-       height: auto;
+       height: 400px;
    }
 
 .featured_on > #article li > div {

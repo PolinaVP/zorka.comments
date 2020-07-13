@@ -483,6 +483,7 @@
 
       .featured_on #article {
         position: relative;
+        overflow: hidden;
       }
 
 

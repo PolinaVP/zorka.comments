@@ -467,6 +467,7 @@
       .featured_on .container {
         vertical-align: top;
         height: 100%;
+        margin: auto;
         margin-left: 0;
       }
 

@@ -168,11 +168,13 @@ let setArticles = function () {
 
         let li = document.createElement('li');
         li.innerHTML = `
+        <div>
         <div class="article" style="background-image: url(${articles[i].preview})"></div>
         <div class="container">
         
             <h3><a href ="${articles[i].source}">${articles[i].title}</a></h3>
             
+        </div>
         </div>
     `;
 

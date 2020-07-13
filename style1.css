@@ -221,6 +221,7 @@ header{
 .featured_on .next_article i{
         
     border-color: #FFFFFF;
+    padding: 9px;
 }
 
 form {

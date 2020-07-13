@@ -174,7 +174,7 @@ let setArticles = function () {
         </div>
     `;
 
-        document.getElementById('article').querySelector('.prev_article').after(li);
+        document.querySelector('#article ul').append(li);
 
     }
 }

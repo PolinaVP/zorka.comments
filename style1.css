@@ -213,6 +213,12 @@ header{
     font-size: 25px;
 }
 
+.featured_on .prev_article i,
+.featured_on .next_article i{
+        
+    border-color: #FFFFFF;
+}
+
 form {
     padding: 0 30px;
   }

@@ -81,7 +81,7 @@ $('.btn_smile').click(function () {
         };
 
 
-        let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
+        let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid')).add('.checkbox:invalid');
         console.log(error_fields);
         if (error_fields.length != 0) {
 

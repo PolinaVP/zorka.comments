@@ -182,8 +182,8 @@ let setArticles = function () {
 
     }
     if (articles.length < 2) {
-        div.querySelector('.next_article').style.display = 'none';
-        div.querySelector('.prev_article').style.display = 'none';
+        document.querySelector('.next_article').style.display = 'none';
+        document.querySelector('.prev_article').style.display = 'none';
     }
 }
 

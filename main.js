@@ -287,8 +287,7 @@ $(document).on('click', function (e) {
             error.removeClass("_animate")
         }
         ), 500);
-        console.log(error);
-        if (error !== undefined) {
+        if (error !== 0) {
             $('.btn_smile').addClass("_animate");
 
             setTimeout((function () {

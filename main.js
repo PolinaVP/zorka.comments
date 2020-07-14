@@ -209,7 +209,7 @@ window.addEventListener('load', function () {
     let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
     for (let field of fields) {
         field.addEventListener('blur', function (event) {
-            let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
+
 
             field.classList.add('was-validated');
             if (field.matches('.was-validated:invalid')) {
@@ -228,6 +228,7 @@ window.addEventListener('load', function () {
                 }
                 ), 500);
             };
+            let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
             if (error_fields.length = 0) {
 
                 $('form .checkbox_policy').css('display', 'flex');

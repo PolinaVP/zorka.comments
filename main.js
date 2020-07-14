@@ -228,7 +228,7 @@ window.addEventListener('load', function () {
                 }
                 ), 500);
             };
-            let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
+            let error_fields = $('form *:invalid');
             console.log(error_fields);
             if (error_fields.length = 0) {
 

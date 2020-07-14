@@ -229,6 +229,7 @@ window.addEventListener('load', function () {
                 ), 500);
             };
             let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
+            console.log(error_fields);
             if (error_fields.length = 0) {
 
                 $('form .checkbox_policy').css('display', 'flex');

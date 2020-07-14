@@ -229,7 +229,6 @@ window.addEventListener('load', function () {
                 ), 500);
             };
             let error_fields = $('form *:invalid');
-            console.log(error_fields);
             if (error_fields.length == 0) {
 
                 $('form .checkbox_policy').css('display', 'flex');

@@ -280,7 +280,7 @@ $(document).on('click', function (e) {
     let select_ar = $('.select_ar');
     if (select_ar !== e.target && !select_ar.has(e.target).length) {
         select_ar.removeClass('open');
-        let error = select_ar.has('select:invalid').parent().find('.error_val');
+        let error = $('.select_ar.was-validated').has('select:invalid').parent().find('.error_val');
         error.addClass("_animate");
 
         setTimeout((function () {

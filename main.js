@@ -287,14 +287,14 @@ $(document).on('click', function (e) {
             error.removeClass("_animate")
         }
         ), 500);
+        if (error) {
+            $('.btn_smile').addClass("_animate");
 
-        $('.btn_smile').addClass("_animate");
-
-        setTimeout((function () {
-            $('.btn_smile').removeClass("_animate")
+            setTimeout((function () {
+                $('.btn_smile').removeClass("_animate")
+            }
+            ), 500);
         }
-        ), 500);
-
 
     };
 

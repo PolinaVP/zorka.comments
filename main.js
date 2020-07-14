@@ -268,6 +268,12 @@ $(document).on('click touch', '.select_ar ul li', function (e) {
     active.attr('selected', true);
     dropdown.find('span').text($(dropdown).find('option:selected').text());
     dropdown.removeClass('open');
+    let error_fields = $('form *:invalid');
+    if (error_fields.length == 0) {
+
+        $('form .checkbox_policy').css('display', 'flex');
+
+    }
 })
 
 $(document).on('click', function (e) {

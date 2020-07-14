@@ -207,9 +207,9 @@ $('.select_ar').each(function () {
 
 window.addEventListener('load', function () {
     let fields = document.querySelectorAll('form input, form .select_ar, form textarea');
-    let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
     for (let field of fields) {
         field.addEventListener('blur', function (event) {
+            let error_fields = $('.was-validated:invalid').add($('.was-validated').has('select:invalid'));
 
             field.classList.add('was-validated');
             if (field.matches('.was-validated:invalid')) {

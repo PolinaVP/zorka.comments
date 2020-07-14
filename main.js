@@ -279,8 +279,8 @@ $(document).on('click touch', '.select_ar ul li', function (e) {
 $(document).on('click', function (e) {
     let select_ar = $('.select_ar');
     if (select_ar !== e.target && !select_ar.has(e.target).length) {
+        let error = $('.select_ar.open.was-validated').has('select:invalid').parent().find('.error_val');
         select_ar.removeClass('open');
-        let error = $('.select_ar.was-validated').has('select:invalid').parent().find('.error_val');
         error.addClass("_animate");
 
         setTimeout((function () {
@@ -294,6 +294,8 @@ $(document).on('click', function (e) {
             $('.btn_smile').removeClass("_animate")
         }
         ), 500);
+
+
     };
 
 });

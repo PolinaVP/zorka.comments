@@ -280,6 +280,21 @@ $(document).on('click', function (e) {
     let select_ar = $('.select_ar');
     if (select_ar !== e.target && !select_ar.has(e.target).length) {
         select_ar.removeClass('open');
-    }
+        let error = $(this).has('select:invalid').parent().find('.error_val');
+        error.addClass("_animate");
+
+        setTimeout((function () {
+            error.removeClass("_animate")
+        }
+        ), 500);
+
+        $('.btn_smile').addClass("_animate");
+
+        setTimeout((function () {
+            $('.btn_smile').removeClass("_animate")
+        }
+        ), 500);
+    };
+}
 });
 

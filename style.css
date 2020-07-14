@@ -754,7 +754,8 @@
       border: none;
   }
 
-  form label p {
+  form label p,
+  form label a{
     display: inline-block;
     font-family: "Libre Baskerville";
         font-style: normal;
@@ -762,16 +763,11 @@
         font-size: 2.3vw;
         line-height: 180%;
         color: #ffffff;
+        vertical-align: middle;
     
 }
 
 form label a {
-  font-family: "Libre Baskerville";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 2.3vw;
-        line-height: 180%;
-        color: #ffffff;
         text-decoration: underline;
 }
 

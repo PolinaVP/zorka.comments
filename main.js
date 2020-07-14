@@ -295,6 +295,6 @@ $(document).on('click', function (e) {
         }
         ), 500);
     };
-}
+
 });
 

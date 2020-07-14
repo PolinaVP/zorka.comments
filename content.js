@@ -198,5 +198,10 @@ $('.featured_on .prev_article').click(function () {
     list.css('margin-left', `${position + 'vw'}`);
 });
 
+if (articles.length < 2) {
+    div.querySelector('.next_article').style.display = 'none';
+    div.querySelector('.prev_article').style.display = 'none';
+}
+
 
 

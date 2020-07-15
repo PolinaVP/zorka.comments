@@ -80,7 +80,9 @@ function ClearForm() {
     autosizeInput(document.querySelector('#task_email'));
     autosizeInput(document.querySelector('#task_msg'));
     $('form .was-validated').removeClass('was-validated');
-    $('.select_ar span').text($(this).parent().find('option:disabled').text());
+    $('.select_ar').each(function () {
+        $(this).find('span').text($(this).find('option:disabled').text());
+    });
     $('form .checkbox_policy').css('display', 'none');
 }
 

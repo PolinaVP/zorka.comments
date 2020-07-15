@@ -79,7 +79,7 @@ function ClearForm() {
     autosizeInput(document.querySelector('#task_company'));
     autosizeInput(document.querySelector('#task_email'));
     autosizeInput(document.querySelector('#task_msg'));
-    $('.was-validated').removeClass('was-validated');
+    $('form .was-validated').removeClass('was-validated');
 }
 
 $('.btn_smile').click(function () {

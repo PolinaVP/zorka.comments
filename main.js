@@ -75,6 +75,10 @@ function formTaskSuccess() {
 
 function ClearForm() {
     $('#contact_us').trigger('reset');
+    autosizeInput(document.querySelector('#task_name'));
+    autosizeInput(document.querySelector('#task_company'));
+    autosizeInput(document.querySelector('#task_email'));
+    autosizeInput(document.querySelector('#task_msg'));
 }
 
 $('.btn_smile').click(function () {

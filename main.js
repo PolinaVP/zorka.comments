@@ -111,12 +111,14 @@ $('.btn_smile').click(function () {
                 .then(res => {
                     if (res.ok) {
                         formTaskSuccess();
+                        ClearForm();
                     } else {
                         $('.btn_smile').addClass("_animate");
 
                         setTimeout((function () {
                             $('.btn_smile').removeClass("_animate")
                         }), 500);
+                        ClearForm();
                     }
 
                 });

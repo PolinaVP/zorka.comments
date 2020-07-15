@@ -82,6 +82,7 @@ function ClearForm() {
     $('form .was-validated').removeClass('was-validated');
     $('.select_ar').each(function () {
         $(this).find('span').text($(this).find('option:disabled').text());
+        $(this).find('option:disabled').attr('selected', true);
     });
     $('form .checkbox_policy').css('display', 'none');
 }

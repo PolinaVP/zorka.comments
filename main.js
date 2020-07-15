@@ -128,7 +128,6 @@ $('.btn_smile').click(function () {
                         setTimeout((function () {
                             $('.btn_smile').removeClass("_animate")
                         }), 500);
-                        ClearForm();
                     }
 
                 });

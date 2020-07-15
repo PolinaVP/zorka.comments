@@ -154,7 +154,6 @@ let loadArticles = function () {
         .then(res => res.json())
         .then(data => {
             articles = data;
-            console.log(articles);
             setArticles();
         });
 }

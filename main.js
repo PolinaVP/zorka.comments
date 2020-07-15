@@ -73,6 +73,10 @@ function formTaskSuccess() {
     $('.btn_smile').css('display', 'none');
 }
 
+function ClearForm() {
+    $('#contact_us').trigger('reset');
+}
+
 $('.btn_smile').click(function () {
     if ($('form').hasClass('open')) {
         let fields = document.querySelectorAll('form input, form .select_ar, form textarea');

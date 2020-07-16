@@ -74,7 +74,12 @@ let setContent = function (videos) {
 
 
     $('.next_video', '.video').click(function () {
-        let i = $(this).parent('.video').parent().index();
+        let i
+        if ($('body').innerWidth() <= 767) {
+            i = $(this).parent('.video').parent().parent().index();
+        } else {
+            i = $(this).parent('.video').parent().index();
+        }
         let part = $(this).prevAll('iframe').attr('part');
         part++;
         if (part >= videos[i].video.length) {
@@ -94,7 +99,12 @@ let setContent = function (videos) {
 
 
     $('.prev_video', '.video').click(function () {
-        let i = $(this).parent('.video').parent().index();
+        let i
+        if ($('body').innerWidth() <= 767) {
+            i = $(this).parent('.video').parent().parent().index();
+        } else {
+            i = $(this).parent('.video').parent().index();
+        }
         let part = $(this).nextAll('iframe').attr('part');
         part--;
         if (part < 0) {

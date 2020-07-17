@@ -170,30 +170,6 @@ $(window).scroll(function () {
 })
 
 
-// $(window).scroll(function () {
-//     $('.container', '.main').each(function () {
-//         let i = $(this).parent().index();
-//         let top_of_element = $(this).offset().top;
-//         let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-//         if (bottom_of_screen > top_of_element) {
-//             if (document.documentElement.clientWidth <= 767) {
-//                 if (i > 2) {
-//                     $('.underline h3', this).css('font-size', '4.8vw');
-//                 } else if (i == 2) {
-//                     $('.underline h3', this).css('font-size', '7vw');
-//                 } else {
-//                     $('.underline h3', this).css('font-size', '6.5vw');
-//                 }
-
-//             } else {
-//                 $('.underline h3', this).css('font-size', '2.3vw');
-//             };
-//         } else {
-
-//             $('.underline h3', this).css('font-size', '0');
-//         }
-//     })
-// })
 
 
 let resizeIrame = function () {

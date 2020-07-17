@@ -129,7 +129,7 @@ let setContent = function (videos) {
 let setVideos = function () {
     let video = document.querySelectorAll('.video');
     let container = document.querySelectorAll('.main .container');
-    if ($('body').innerWidth() <= 767) {
+    if (document.documentElement.clientWidth <= 767) {
         for (let i = 0; i < container.length; i++) {
             container[i].querySelector('p').before(video[i]);
         }

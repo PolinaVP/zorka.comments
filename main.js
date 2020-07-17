@@ -160,11 +160,11 @@ $(window).scroll(function () {
         if (bottom_of_screen > top_of_element) {
             if (document.documentElement.clientWidth <= 767) {
                 if (i > 2) {
-                    $('h3', this).css('font-size', '4.8vw');
+                    $('.underline h3', this).css('font-size', '4.8vw');
                 } else if (i == 2) {
-                    $('h3', this).css('font-size', '7vw');
+                    $('.underline h3', this).css('font-size', '7vw');
                 } else {
-                    $('h3', this).css('font-size', '6.5vw');
+                    $('.underline h3', this).css('font-size', '6.5vw');
                 }
 
             } else {

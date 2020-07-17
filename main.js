@@ -158,7 +158,7 @@ $(window).scroll(function () {
         let top_of_element = $(this).offset().top;
         let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
         if (bottom_of_screen > top_of_element) {
-            if (document.body.clientWidth() <= 767) {
+            if (document.body.clientWidth <= 767) {
                 if (i > 2) {
                     $('h3', this).css('font-size', '4.8vw');
                 } else if (i == 2) {

@@ -168,7 +168,7 @@ $(window).scroll(function () {
                 }
 
             } else {
-                $('h3', this).css('font-size', '2.3vw');
+                $('.underline h3', this).css('font-size', '2.3vw');
             };
         } else {
 

@@ -172,7 +172,7 @@ $(window).scroll(function () {
             };
         } else {
 
-            $('h3', this).css('font-size', '0');
+            $('.underline h3', this).css('font-size', '0');
         }
     })
 })

@@ -160,19 +160,19 @@ $(window).scroll(function () {
         if (bottom_of_screen > top_of_element) {
             if (document.documentElement.clientWidth <= 767) {
                 if (i > 2) {
-                    $(' .main .container h3').css('font-size', '4.8vw');
+                    $('h3', this).css('font-size', '4.8vw');
                 } else if (i == 2) {
-                    $(' .main .container h3').css('font-size', '7vw');
+                    $('h3', this).css('font-size', '7vw');
                 } else {
-                    $(' .main .container h3').css('font-size', '6.5vw');
+                    $('h3', this).css('font-size', '6.5vw');
                 }
 
             } else {
-                $(' .main .container h3').css('font-size', '2.3vw');
+                $('h3', this).css('font-size', '2.3vw');
             };
         } else {
 
-            $(' .main .container .underline h3').css('font-size', '0');
+            $('h3', this).css('font-size', '0');
         }
     })
 })

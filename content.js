@@ -20,7 +20,7 @@ let setContent = function (videos) {
             <div class="container">
                 <div>
                 <h3>${videos[i].title}</h3>
-                <div class="underline"><h3>${videos[i].title}</h3></div>
+                <div class="underline"><div><h3>${videos[i].title}</h3></div></div>
                 </div>
                 <p>${videos[i].description[0]}</p>
                 <a href=${videos[i].source[0]} target=" _blank" >Check it out</a>

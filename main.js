@@ -160,11 +160,11 @@ $(window).scroll(function () {
         if (bottom_of_screen > top_of_element) {
 
 
-            $('.underline h3', this).css('margin-left', '');
+            $('.underline div', this).css('margin-left', '');
 
         } else {
 
-            $('.underline h3', this).css('margin-left', '-100%');
+            $('.underline div', this).css('margin-left', '-100%');
         }
     })
 })

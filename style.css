@@ -348,6 +348,9 @@
         
 
       }
+      .main .container .underline div{
+        margin-left: 0;
+      }
 
       .main .container .underline h3 {
         vertical-align: bottom;

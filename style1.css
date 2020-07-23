@@ -110,8 +110,7 @@ header{
     margin: 60px auto 30px auto;
    
 }
-.main div .container h3,
-.main div .container .underline h3 {
+.main div .container h3{
     font-size: 4.8vw;
 }
 

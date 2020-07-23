@@ -111,8 +111,8 @@ header{
    
 }
 .main div .container h3,
-.main div:nth-child(4) h3,
-.main div:nth-child(5) h3{
+.main div:nth-child(4) .container h3,
+.main div:nth-child(5) .container h3{
     font-size: 4.8vw;
 }
 

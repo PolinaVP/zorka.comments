@@ -110,7 +110,9 @@ header{
     margin: 60px auto 30px auto;
    
 }
-.main div .container h3{
+.main div .container h3,
+.main div:nth-child(4) h3,
+.main div:nth-child(5) h3{
     font-size: 4.8vw;
 }
 

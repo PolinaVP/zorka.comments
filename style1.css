@@ -10,9 +10,12 @@ h2 {
     font-size: 25px;
 }
 
-h3 {
+h3,
+.underline h3 {
     font-size: 4.8vw;
 }
+
+.underline h3
 
 .img-container {
     padding: 57px 40px 0;

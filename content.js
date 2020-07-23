@@ -153,7 +153,7 @@ let setMain = function (marketing) {
 }
 setMain("influencer");
 $(window).on('resize', setVideos);
-window.addEventListener("orientationchange", setVideos);
+// window.addEventListener("orientationchange", setVideos);
 
 
 
